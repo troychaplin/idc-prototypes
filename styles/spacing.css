@@ -2,7 +2,7 @@
 .ui-section + .ui-section,
 .ui-section + :not(.ui-section),
 :not(.ui-section) + .ui-section {
-  @apply mt-8;
+  @apply mt-6;
 }
 
 /* Set top margin on consecutive components that are direct descendants of section */
