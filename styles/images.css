@@ -1,11 +1,15 @@
-.ui-image img {
+.ui-figure img {
   @apply w-full;
 }
 
-.ui-image.alignleft {
+.ui-figure.alignleft {
   @apply float-left mb-5 mr-8 clear-left;
 }
 
-.ui-image.size-medium {
+.ui-figure.size-medium {
   @apply w-full max-w-sm;
+}
+
+.ui-figure.size-full {
+  @apply w-full h-auto;
 }

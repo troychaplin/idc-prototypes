@@ -9,14 +9,9 @@ export default function Content() {
       <header>Header Row</header>
 
       <Main>
-        <Section as="div" maxWidth="full">
-          <Placeholder name="frequently-asked-questions" />
-        </Section>
-
-        <Section maxWidth="3xl">
+        <Section maxWidth="2xl">
           <h2>Our Services</h2>
           <p>
-            {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
             maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
@@ -24,9 +19,10 @@ export default function Content() {
             dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
             in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
             tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.{" "}
+            felis dapibus eu.
           </p>
-          <figure className="wp-block-image alignleft size-medium">
+
+          <figure className="ui-figure alignleft size-medium">
             <Image
               className=""
               src="https://picsum.photos/id/20/300/225"
@@ -36,8 +32,8 @@ export default function Content() {
               decoding="async"
             />
           </figure>
+
           <p>
-            {" "}
             Quisque erat diam, porta quis libero eget, ultrices ornare nisi.
             Vestibulum accumsan mauris sed elit maximus dignissim. Suspendisse
             ac facilisis felis. Mauris rhoncus mauris mauris, a porttitor diam
@@ -47,26 +43,40 @@ export default function Content() {
             enim sagittis pellentesque. Sed turpis ex, sollicitudin sed est et,
             pulvinar malesuada nunc. Morbi pulvinar nibh nec lectus ullamcorper,
             vel semper augue cursus. Duis dapibus nisl eget purus dignissim, vel
-            sollicitudin diam fermentum. Etiam sollicitudin vel nibh ut
-            ultricies. Donec blandit, odio eu cursus sagittis, nibh sapien
-            pulvinar erat, eget iaculis massa nisl ut elit. Nam eget volutpat
-            orci. Sed dapibus cursus turpis eget rhoncus. Vestibulum ante ipsum
-            primis in faucibus orci luctus et ultrices posuere cubilia curae;{" "}
+            sollicitudin diam fermentum.
           </p>
-          <Section as="div" maxWidth="full" notConstrained>
+
+          <Section as="div" maxWidth="7xl" notConstrained>
             <Placeholder name="frequently-asked-questions" />
           </Section>
+
           <p>
-            {" "}
+            Quisque erat diam, porta quis libero eget, ultrices ornare nisi.
+            Vestibulum accumsan mauris sed elit maximus dignissim. Suspendisse
+            ac facilisis felis. Mauris rhoncus mauris mauris, a porttitor diam
+            pellentesque ut. Sed commodo posuere interdum. Cras aliquet mauris
+            sit amet lacus eleifend, ac maximus sem porta. Curabitur consectetur
+            tortor sapien, in maximus orci elementum ut. Duis et massa mattis
+            enim sagittis pellentesque. Sed turpis ex, sollicitudin sed est et,
+            pulvinar malesuada nunc. Morbi pulvinar nibh nec lectus ullamcorper,
+            vel semper augue cursus.
+          </p>
+
+          <Section as="div" maxWidth="5xl" notConstrained>
+            <Placeholder name="frequently-asked-questions" />
+          </Section>
+
+          <p>
             Nullam ut maximus lorem. Maecenas pulvinar odio eu sem molestie
             interdum. Cras consequat pulvinar magna. Donec pulvinar quis ligula
             in euismod. Sed et ultricies augue, commodo pellentesque ligula.
             Curabitur in sem est. Suspendisse potenti. Curabitur iaculis ex quis
             nibh fringilla lacinia. Quisque tellus diam, imperdiet ut auctor sit
             amet, maximus ac ligula. Pellentesque posuere orci at risus
-            pellentesque, et ultrices urna iaculis.{" "}
+            pellentesque, et ultrices urna iaculis.
           </p>
-          <figure className="wp-block-image size-full">
+
+          <figure className="ui-figure size-full">
             <Image
               className=""
               src="https://picsum.photos/id/20/904/678"
@@ -76,8 +86,8 @@ export default function Content() {
               decoding="async"
             />
           </figure>
+
           <p>
-            {" "}
             Quisque sagittis interdum felis, ut sollicitudin sem dapibus
             gravida. Proin in aliquam libero. Cras ullamcorper efficitur arcu,
             porttitor bibendum turpis lacinia id. Sed laoreet augue eget libero
@@ -85,14 +95,10 @@ export default function Content() {
             dui vel, dapibus vulputate neque. Phasellus vel ultrices est, id
             molestie ligula. Fusce convallis nibh sit amet neque convallis
             interdum. Proin vitae mattis enim. In et nisi metus. Nam quis
-            elementum nibh. Sed eget dapibus metus, in iaculis nisi. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Nulla facilisi. Fusce eget euismod metus. Vivamus
-            rutrum dui id metus auctor, at commodo odio vulputate. Curabitur
-            luctus tortor consequat molestie consectetur.{" "}
+            elementum nibh.
           </p>
+
           <p>
-            {" "}
             Donec in orci tortor. Vestibulum in nulla et eros vulputate maximus.
             Nulla nec nibh a felis elementum vehicula. Integer condimentum
             eleifend augue in molestie. Vivamus dapibus tristique ante et
@@ -100,11 +106,7 @@ export default function Content() {
             lacus. Donec malesuada, risus molestie sodales accumsan, diam tellus
             dapibus lectus, a cursus dui tellus sagittis turpis. Maecenas nec
             metus luctus, tincidunt mauris in, tristique urna. Fusce commodo
-            malesuada interdum. Phasellus mollis lorem at dictum varius. In
-            pharetra erat viverra scelerisque faucibus. Quisque tempor blandit
-            ligula at rhoncus. Nullam quam mauris, commodo et pretium vel,
-            pellentesque eu nulla. Proin non urna vestibulum, consequat risus
-            at, sodales enim.{" "}
+            malesuada interdum.
           </p>
         </Section>
       </Main>
