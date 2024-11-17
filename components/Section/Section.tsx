@@ -17,14 +17,22 @@ export const Section = ({
   notConstrained,
 }: SectionProps) => {
   const SectionComponent = as;
-  const maxWidthChildren = maxWidth ? `ui-max-width-${maxWidth}` : "";
-  const ignoreParentWidth = notConstrained ? "ui-no-max-width" : "";
+
+  const maxWidthClass = notConstrained
+    ? `ui-max-w-child-${maxWidth}`
+    : `ui-max-w-${maxWidth}`;
+
+  const mainWrapperClass = notConstrained
+    ? "ui-section ui-layout w-screen ml-offset-center"
+    : `ui-section ui-layout box-border relative w-full ${maxWidthClass}`;
 
   return (
-    <SectionComponent
-      className={`ui-layout-component ui-section ${maxWidthChildren} ${ignoreParentWidth}`}
-    >
-      {children}
+    <SectionComponent className={mainWrapperClass}>
+      {notConstrained ? (
+        <div className={`${maxWidthClass}`}>{children}</div>
+      ) : (
+        <>{children}</>
+      )}
     </SectionComponent>
   );
 };

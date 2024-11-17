@@ -1,3 +1,11 @@
-.wp-block-image.alignleft {
-  @apply float-left clear-left;
+.ui-image img {
+  @apply w-full;
+}
+
+.ui-image.alignleft {
+  @apply float-left mb-5 mr-8 clear-left;
+}
+
+.ui-image.size-medium {
+  @apply w-full max-w-sm;
 }

@@ -4,6 +4,6 @@
 }
 
 /* Set top margin on consecutive components that are direct descendants of section */
-.ui-section > .ui-layout-component + .ui-layout-component {
+.ui-section > .ui-layout + .ui-layout {
   @apply mt-8;
 }

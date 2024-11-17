@@ -9,9 +9,12 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      // colors: {
+      //   background: "var(--background)",
+      //   foreground: "var(--foreground)",
+      // },
+      margin: {
+        "offset-center": "calc(-50vw + 50%)",
       },
     },
   },
