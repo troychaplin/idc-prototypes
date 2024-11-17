@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { Main } from "@/components/Main";
+import { Main, Section } from "@troychaplin79/idc-ui-kit";
 import { Placeholder } from "@/components/Placeholder";
-import { Section } from "@/components/Section";
 
 export default function Content() {
   return (
