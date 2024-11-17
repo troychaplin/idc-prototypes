@@ -1,0 +1,3 @@
+.wp-block-image.alignleft {
+  @apply float-left clear-left;
+}

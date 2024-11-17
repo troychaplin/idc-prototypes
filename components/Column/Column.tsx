@@ -23,7 +23,7 @@ export const ColumnContainer = ({
 
   return (
     <div
-      className={`ui-column ui-no-max-width ${uiMaxWidth[maxWidth]} mx-auto grid ${uiGridColumns[cols]}`}
+      className={`ui-layout-component ui-column ui-no-max-width ${uiMaxWidth[maxWidth]} mx-auto grid ${uiGridColumns[cols]}`}
       style={style}
     >
       {children}

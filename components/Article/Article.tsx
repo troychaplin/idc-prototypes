@@ -7,7 +7,7 @@ export interface ArticleProps {
 
 export const Article = ({ children, content }: ArticleProps) => {
   return (
-    <article className="idc-article">
+    <article className="ui-layout-component">
       {content ? (
         <div dangerouslySetInnerHTML={{ __html: content }} />
       ) : (

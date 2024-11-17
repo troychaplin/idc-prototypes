@@ -12,3 +12,65 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@import "../styles/max-width.css";
+@import "../styles/spacing.css";
+@import "../styles/images.css";
+
+body,
+main {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.section-wrapper {
+  max-width: 768px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.section-content {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Full-width element */
+.element-full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 20px;
+}
+
+.element-full-width figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.element-5xl-width,
+.element-7xl-width {
+  background-color: green;
+}
+
+/* 1024px max-width element breaking outside */
+.element-5xl-width {
+  max-width: 1024px;
+  width: 100%;
+  margin-left: calc(-512px + 50%);
+  margin-bottom: 20px;
+}
+
+/* 1280px max-width element breaking outside */
+.element-7xl-width {
+  max-width: 1280px;
+  width: 100%;
+  margin-left: calc(-640px + 50%);
+  margin-bottom: 20px;
+}
