@@ -1,6 +1,6 @@
-import { Main } from "@/components/Main/Main";
-import { Placeholder } from "@/components/Placeholder/Placeholder";
-import { Section } from "@/components/Section/Section";
+import { Main } from "@/components/Main";
+import { Placeholder } from "@/components/Placeholder";
+import { Section } from "@/components/Section";
 
 export default function Home() {
   return (

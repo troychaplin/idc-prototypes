@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Main } from "@/components/Main/Main";
-import { Placeholder } from "@/components/Placeholder/Placeholder";
-import { Section } from "@/components/Section/Section";
+import { Main } from "@/components/Main";
+import { Placeholder } from "@/components/Placeholder";
+import { Section } from "@/components/Section";
 
 export default function Content() {
   return (
@@ -21,8 +21,30 @@ export default function Content() {
             tristique sit amet a leo. Donec lacinia libero orci, id ultricies
             felis dapibus eu.
           </p>
+          <Section maxWidth="2xl" notConstrained>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              consequat urna sed euismod lobortis. Aenean iaculis, elit non
+              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
+              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
+              platea dictumst. Phasellus pretium augue est, semper fringilla
+              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
+              commodo tristique sit amet a leo. Donec lacinia libero orci, id
+              ultricies felis dapibus eu.
+            </p>
+          </Section>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
+            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
+            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
+            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
+            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
+            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
+            felis dapibus eu.
+          </p>
 
-          <ul>
+          <ul className="bg-idc-blue-100">
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis.
@@ -266,11 +288,11 @@ export default function Content() {
             vel semper augue cursus.
           </p>
 
-          <Section maxWidth="5xl" notConstrained>
+          <Section maxWidth="5xl" notConstrained isBlue>
             <Placeholder name="frequently-asked-questions" />
           </Section>
 
-          <Section maxWidth="7xl" notConstrained>
+          <Section maxWidth="7xl" notConstrained isBlue>
             <Placeholder name="news-and-articles" />
           </Section>
 
