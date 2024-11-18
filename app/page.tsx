@@ -1,5 +1,4 @@
-import { Main, Section } from "@troychaplin79/idc-ui-kit";
-import { Placeholder } from "@/components/Placeholder";
+import { Main, Section, Placeholder } from "@troychaplin79/idc-ui-kit";
 
 export default function Home() {
   return (

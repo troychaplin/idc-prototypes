@@ -1,4 +1,6 @@
-import { uiMaxWidth, uiGridColumns } from "@/utils/propClasses";
+import { propClasses } from "@troychaplin79/idc-ui-kit";
+const { uiMaxWidth, uiGridColumns } = propClasses;
+
 import { ColumnContent } from "./content";
 
 type MaxWidthKeys = keyof typeof uiMaxWidth;
