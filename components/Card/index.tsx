@@ -1,8 +1,5 @@
-import {
-  uiMaxWidth,
-  uiRoundedCorners,
-  uiDropShadow,
-} from "@/utils/propClasses";
+import { propClasses } from "@troychaplin79/idc-ui-kit";
+const { uiMaxWidth, uiRoundedCorners, uiDropShadow } = propClasses;
 
 type MaxWidthKeys = keyof typeof uiMaxWidth;
 type RoundedKeys = keyof typeof uiRoundedCorners;

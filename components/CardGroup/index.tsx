@@ -1,4 +1,5 @@
-import { uiGridColumns } from "@/utils/propClasses";
+import { propClasses } from "@troychaplin79/idc-ui-kit";
+const { uiGridColumns } = propClasses;
 
 type GridColumnsKeys = keyof typeof uiGridColumns;
 

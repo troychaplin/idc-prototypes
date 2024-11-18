@@ -1,4 +1,6 @@
-import { uiMaxWidth } from "@/utils/propClasses";
+import { propClasses } from "@troychaplin79/idc-ui-kit";
+const { uiMaxWidth } = propClasses;
+
 type maxWidthKeys = keyof typeof uiMaxWidth;
 
 export interface PlaceholderProps {
