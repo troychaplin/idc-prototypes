@@ -7,11 +7,20 @@ export default function Home() {
       <header>Header Row</header>
 
       <Main>
-        <Section maxWidth="3xl">
-          <Section>
+        <Section maxWidth="4xl">
+          <Section maxWidth="full" notConstrained isBlue>
             <Placeholder name="hero-banner" />
+          </Section>
+
+          <Section maxWidth="5xl" notConstrained isBlue>
             <Placeholder name="three-step-process" />
+          </Section>
+
+          <Section>
             <Placeholder name="get-started-today" />
+          </Section>
+
+          <Section>
             <Placeholder name="client-testimonials" />
           </Section>
 
