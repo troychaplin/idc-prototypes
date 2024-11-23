@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Open_Sans } from "next/font/google"; // Change to Open Sans
 import "./globals.css";
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`${openSans.className} antialiased`}>{children}</body>
     </html>
   );
 }
