@@ -288,11 +288,11 @@ export default function Content() {
             vel semper augue cursus.
           </p>
 
-          <Section maxWidth="5xl" notConstrained isBlue>
+          <Section maxWidth="5xl" notConstrained bgType="blue">
             <Placeholder name="frequently-asked-questions" />
           </Section>
 
-          <Section maxWidth="7xl" notConstrained isBlue>
+          <Section maxWidth="7xl" notConstrained bgType="blue">
             <Placeholder name="news-and-articles" />
           </Section>
 
