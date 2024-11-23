@@ -9,12 +9,24 @@ export default function Home() {
 
       <Main>
         <Section maxWidth="4xl">
-          <Section maxWidth="full" notConstrained isBlue>
+          <Section maxWidth="full" bgType="blue" hasGradient notConstrained>
             <Placeholder name="hero-banner" />
           </Section>
 
-          <Section maxWidth="5xl" notConstrained isBlue>
+          <Section maxWidth="5xl" bgType="blue" notConstrained>
             <Placeholder name="three-step-process" />
+          </Section>
+
+          <Section maxWidth="5xl" bgType="white" notConstrained>
+            <Placeholder name="three-step-process" />
+          </Section>
+
+          <Section maxWidth="5xl" bgType="blue" notConstrained>
+            <Placeholder name="three-step-process" />
+          </Section>
+
+          <Section maxWidth="full" bgType="white" hasGradient notConstrained>
+            <Placeholder name="hero-banner" />
           </Section>
 
           <Section>
