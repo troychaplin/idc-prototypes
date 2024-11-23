@@ -1,38 +1,24 @@
-import { propClasses } from "@troychaplin79/idc-ui-kit";
-const { uiMaxWidth, uiGridColumns } = propClasses;
+import { uiMaxWidth, uiGridColumns } from '../../utils/propClasses'
+import { ColumnContent } from './content'
 
-import { ColumnContent } from "./content";
-
-type MaxWidthKeys = keyof typeof uiMaxWidth;
-type ColumnKeys = keyof typeof uiGridColumns;
+type MaxWidthKeys = keyof typeof uiMaxWidth
+type ColumnKeys = keyof typeof uiGridColumns
 
 export interface ColumnProps {
-  children?: React.ReactNode;
-  maxWidth?: MaxWidthKeys;
-  cols?: ColumnKeys;
-  gap?: number;
+  children?: React.ReactNode
+  maxWidth?: MaxWidthKeys
+  cols?: ColumnKeys
+  gap?: number
 }
 
-export const ColumnContainer = ({
-  children,
-  maxWidth = "5xl",
-  cols = 2,
-  gap = 25,
-}: ColumnProps) => {
-  const style = {
-    gridGap: gap ? gap : "",
-  };
-
+export const ColumnContainer = ({ children, maxWidth = '5xl', cols = 2 }: ColumnProps) => {
   return (
-    <div
-      className={`ui-layout ui-column ui-no-max-w-children ${uiMaxWidth[maxWidth]} mx-auto grid ${uiGridColumns[cols]}`}
-      style={style}
-    >
+    <div className={`ui-column ui-no-max-width ${uiMaxWidth[maxWidth]} mx-auto grid ${uiGridColumns[cols]} gap-6`}>
       {children}
     </div>
-  );
-};
+  )
+}
 
 export const Column = Object.assign(ColumnContainer, {
   Content: ColumnContent,
-});
+})

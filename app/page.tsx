@@ -1,4 +1,6 @@
-import { Main, Section, Placeholder } from "@troychaplin79/idc-ui-kit";
+import { Main } from "@/components/Main";
+import { Section } from "@/components/Section";
+import { Placeholder } from "@/components/Placeholder";
 
 export default function Home() {
   return (
@@ -7,12 +9,24 @@ export default function Home() {
 
       <Main>
         <Section maxWidth="4xl">
-          <Section maxWidth="full" notConstrained isBlue>
+          <Section maxWidth="full" bgType="blue" hasGradient notConstrained>
             <Placeholder name="hero-banner" />
           </Section>
 
-          <Section maxWidth="5xl" notConstrained isBlue>
+          <Section maxWidth="5xl" bgType="blue" notConstrained>
             <Placeholder name="three-step-process" />
+          </Section>
+
+          <Section maxWidth="5xl" bgType="white" notConstrained>
+            <Placeholder name="three-step-process" />
+          </Section>
+
+          <Section maxWidth="5xl" bgType="blue" notConstrained>
+            <Placeholder name="three-step-process" />
+          </Section>
+
+          <Section maxWidth="full" bgType="white" hasGradient notConstrained>
+            <Placeholder name="hero-banner" />
           </Section>
 
           <Section>

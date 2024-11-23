@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { Main, Section, Placeholder } from "@troychaplin79/idc-ui-kit";
+import { Main } from "@/components/Main";
+import { Section } from "@/components/Section";
+import { Placeholder } from "@/components/Placeholder";
 
 export default function Content() {
   return (
@@ -286,11 +288,11 @@ export default function Content() {
             vel semper augue cursus.
           </p>
 
-          <Section maxWidth="5xl" notConstrained isBlue>
+          <Section maxWidth="5xl" notConstrained bgType="blue">
             <Placeholder name="frequently-asked-questions" />
           </Section>
 
-          <Section maxWidth="7xl" notConstrained isBlue>
+          <Section maxWidth="7xl" notConstrained bgType="blue">
             <Placeholder name="news-and-articles" />
           </Section>
 
