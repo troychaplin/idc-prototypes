@@ -16,34 +16,76 @@ const config: Config = {
       },
       typography: (theme: (path: string) => string | undefined) => ({
         DEFAULT: {
-          css: {
-            "h1, h2, h3, h4": {
-              "font-weight": "600",
+          css: [
+            {
+              "--tw-prose-body": theme("colors.idc-black[900]"),
+              "--tw-prose-headings": theme("colors.idc-black[800]"),
+              "--tw-prose-links": theme("colors.idc-blue[600]"),
+              "--tw-prose-bullets": theme("colors.idc-black[600]"),
+              // "--tw-prose-quotes": theme("colors.pink[900]"),
+              // "--tw-prose-quote-borders": theme("colors.pink[300]"),
+              // "--tw-prose-captions": theme("colors.pink[700]"),
+              // "--tw-prose-code": theme("colors.pink[900]"),
+              // "--tw-prose-pre-code": theme("colors.pink[100]"),
             },
-            a: {
-              "font-weight": "semibold",
-              "text-decoration": "none",
-              "&:hover": {
-                "text-decoration": "underline",
+            {
+              a: {
+                fontWeight: 600,
+                textDecoration: "none",
+                "&:hover": {
+                  textDecoration: "underline",
+                },
+              },
+              h1: {
+                fontWeight: "600",
+              },
+              h2: {
+                fontWeight: "600",
+                marginBottom: "1rem",
+              },
+              h3: {
+                fontWeight: "600",
+                marginBottom: "0.75rem",
+              },
+              h4: {
+                fontWeight: "600",
+                marginBottom: "0.5rem",
+              },
+              "h5, h6": {
+                fontWeight: "600",
               },
             },
-            "--tw-prose-body": theme("colors.idc-black[900]"),
-            "--tw-prose-headings": theme("colors.idc-black[800]"),
-            // "--tw-prose-lead": theme("colors.pink[700]"),
-            "--tw-prose-links": theme("colors.idc-blue[600]"),
-            // "--tw-prose-bold": theme("colors.pink[900]"),
-            // "--tw-prose-counters": theme("colors.pink[600]"),
-            "--tw-prose-bullets": theme("colors.idc-black[600]"),
-            // "--tw-prose-hr": theme("colors.pink[300]"),
-            // "--tw-prose-quotes": theme("colors.pink[900]"),
-            // "--tw-prose-quote-borders": theme("colors.pink[300]"),
-            // "--tw-prose-captions": theme("colors.pink[700]"),
-            // "--tw-prose-code": theme("colors.pink[900]"),
-            // "--tw-prose-pre-code": theme("colors.pink[100]"),
-            // "--tw-prose-pre-bg": theme("colors.pink[900]"),
-            // "--tw-prose-th-borders": theme("colors.pink[300]"),
-            // "--tw-prose-td-borders": theme("colors.pink[200]"),
-          },
+          ],
+        },
+        xl: {
+          css: [
+            {
+              h2: {
+                marginBottom: "1.25rem",
+              },
+              h3: {
+                marginBottom: "1rem",
+              },
+              h4: {
+                marginBottom: "0.5rem",
+              },
+            },
+          ],
+        },
+        lg: {
+          css: [
+            {
+              h2: {
+                marginBottom: "1.25rem",
+              },
+              h3: {
+                marginBottom: "1rem",
+              },
+              h4: {
+                marginBottom: "0.5rem",
+              },
+            },
+          ],
         },
       }),
       colors: {
