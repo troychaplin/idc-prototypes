@@ -31,7 +31,7 @@ import "./globals.css";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
