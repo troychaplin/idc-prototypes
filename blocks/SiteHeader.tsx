@@ -6,7 +6,7 @@ import Link from "next/link";
 export const SiteHeader = () => {
   return (
     <Header>
-      <Link href="/">
+      <Link href="/" aria-label="Go to homepage">
         <Header.SiteLogo />
       </Link>
       <Header.Navigation />

@@ -1,0 +1,6 @@
+.idc-navitem a {
+  @apply px-3 py-1 rounded;
+}
+.idc-navitem a:hover {
+  @apply bg-idc-blue-50;
+}
