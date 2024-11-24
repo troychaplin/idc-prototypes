@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import "../styles/typography.css"; */
-
 /* Other Styles */
 @import "../styles/images.css";
 @import "../styles/max-width.css";
@@ -13,3 +11,4 @@
 /* Global Classes */
 @import "../components/Button/styles.css";
 @import "../components/Card/styles.css";
+@import "../components/Header/styles.css";
