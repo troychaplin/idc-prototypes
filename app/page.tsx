@@ -1,11 +1,12 @@
 import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { Placeholder } from "@/components/Placeholder";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
     <>
-      <header>Header Row</header>
+      <Header />
 
       <Main>
         <Section maxWidth="4xl">

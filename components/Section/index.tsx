@@ -6,7 +6,7 @@ type MaxWidthKeys = keyof typeof uiMaxWidth;
 
 export interface SectionProps {
   children?: React.ReactNode;
-  as?: "section" | "div";
+  as?: "section" | "div" | "header";
   maxWidth?: MaxWidthKeys;
   notConstrained?: boolean;
   bgType?: "blue" | "white";
