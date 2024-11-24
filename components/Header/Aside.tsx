@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Aside = () => {
-  return <p>Site Logo</p>;
+  return <p>Aside</p>;
 };

@@ -4,19 +4,21 @@ import { SiteLogo } from "./SiteLogo";
 import { Navigation } from "./Navigation";
 import { Aside } from "./Aside";
 
-export const HeaderContainer = () => {
+export interface HeaderProps {
+  children?: React.ReactNode;
+}
+
+const HeaderContainer = ({ children }: HeaderProps) => {
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
-
     if (currentScrollY > lastScrollY && currentScrollY > 50) {
       setVisible(false);
     } else {
       setVisible(true);
     }
-
     setLastScrollY(currentScrollY);
   }, [lastScrollY]);
 
@@ -33,11 +35,7 @@ export const HeaderContainer = () => {
         visible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className="flex justify-between bg-slate-200">
-        <div className="idc-logo">IDC</div>
-        <nav>Navigation</nav>
-        <aside>Aside</aside>
-      </div>
+      <div className="flex justify-between gap-2">{children}</div>
     </header>
   );
 };
