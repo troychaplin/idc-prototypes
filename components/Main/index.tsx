@@ -6,13 +6,11 @@ export interface MainProps {
 }
 
 export const Main = ({ children, noProse }: MainProps) => {
-  const proseClass = noProse ? "" : "prose md:prose-lg lg:prose-xl max-w-none";
-
-  // const proseClass = "";
+  const proseClass = noProse ? "" : "prose md:prose-lg xl:prose-xl max-w-none";
 
   return (
     <main
-      className={`ui-main flex justify-center px-6 py-5 md:p-8 ${proseClass}`}
+      className={`ui-main flex justify-center font-sans px-6 py-5 md:p-8 ${proseClass}`}
     >
       {children}
     </main>

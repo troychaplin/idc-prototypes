@@ -10,7 +10,18 @@ export default function Content() {
 
       <Main>
         <Section maxWidth="2xl">
-          <h2>Our Services</h2>
+          <h1>Header One</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
+            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
+            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
+            dictumst. Phasellus pretium augue est,{" "}
+            <a href="#">semper fringilla lacus</a> auctor in. Fusce eu lectus
+            lacus. Quisque et magna nec eros commodo tristique sit amet a leo.
+            Donec lacinia libero orci, id ultricies felis dapibus eu.
+          </p>
+          <h2>Header Two</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
@@ -21,18 +32,40 @@ export default function Content() {
             tristique sit amet a leo. Donec lacinia libero orci, id ultricies
             felis dapibus eu.
           </p>
-          <Section maxWidth="2xl" notConstrained>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              consequat urna sed euismod lobortis. Aenean iaculis, elit non
-              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
-              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
-              platea dictumst. Phasellus pretium augue est, semper fringilla
-              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
-              commodo tristique sit amet a leo. Donec lacinia libero orci, id
-              ultricies felis dapibus eu.
-            </p>
-          </Section>
+          <h3>Header Three</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
+            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
+            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
+            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
+            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
+            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
+            felis dapibus eu.
+          </p>
+          <h4>Header Four</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
+            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
+            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
+            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
+            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
+            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
+            felis dapibus eu.
+          </p>
+          <h5>Header Five</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
+            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
+            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
+            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
+            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
+            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
+            felis dapibus eu.
+          </p>
+          <h6>Header Six</h6>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
@@ -44,7 +77,62 @@ export default function Content() {
             felis dapibus eu.
           </p>
 
-          <ul className="bg-idc-blue-100">
+          <Section maxWidth="2xl" bgType="blue" notConstrained>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              consequat urna sed euismod lobortis. Aenean iaculis, elit non
+              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
+              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
+              platea dictumst. Phasellus pretium augue est, semper fringilla
+              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
+              commodo tristique sit amet a leo. Donec lacinia libero orci, id
+              ultricies felis dapibus eu.
+            </p>
+          </Section>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
+            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
+            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
+            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
+            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
+            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
+            felis dapibus eu.
+          </p>
+          <h1>Header One</h1>
+          <h2>Header Two</h2>
+          <h3>
+            Header <a href="#">Three</a>
+          </h3>
+          <h4>Header Four</h4>
+          <h5>Header Five</h5>
+          <h6>Header Six</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
+            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
+            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
+            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
+            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
+            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
+            felis dapibus eu.
+          </p>
+
+          <Section maxWidth="2xl" bgType="blue" notConstrained>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              consequat urna sed euismod lobortis. Aenean iaculis, elit non
+              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
+              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
+              platea dictumst. Phasellus pretium augue est, semper fringilla
+              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
+              commodo tristique sit amet a leo. Donec lacinia libero orci, id
+              ultricies felis dapibus eu.
+            </p>
+          </Section>
+
+          <ul>
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis.
@@ -169,6 +257,20 @@ export default function Content() {
             tristique sit amet a leo. Donec lacinia libero orci, id ultricies
             felis dapibus eu.
           </p>
+
+          <Section maxWidth="2xl" bgType="blue" notConstrained>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              consequat urna sed euismod lobortis. Aenean iaculis, elit non
+              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
+              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
+              platea dictumst. Phasellus pretium augue est, semper fringilla
+              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
+              commodo tristique sit amet a leo. Donec lacinia libero orci, id
+              ultricies felis dapibus eu.
+            </p>
+          </Section>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
@@ -265,7 +367,7 @@ export default function Content() {
           </p>
 
           <Section maxWidth="4xl" notConstrained>
-            <h3>Our Services</h3>
+            <h3>Header</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis. Aenean iaculis, elit non
