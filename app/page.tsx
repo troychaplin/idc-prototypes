@@ -10,31 +10,43 @@ export default function Home() {
 
       <Main>
         <Section maxWidth="4xl">
-          <Section maxWidth="full" bgType="blue" hasGradient notConstrained>
+          <Section
+            as="div"
+            maxWidth="full"
+            bgType="blue"
+            hasGradient
+            notConstrained
+          >
             <Placeholder name="hero-banner" />
           </Section>
 
-          <Section maxWidth="5xl" bgType="blue" notConstrained>
+          <Section as="div" maxWidth="5xl" bgType="blue" notConstrained>
             <Placeholder name="three-step-process" />
           </Section>
 
-          <Section maxWidth="5xl" bgType="white" notConstrained>
+          <Section as="div" maxWidth="5xl" bgType="white" notConstrained>
             <Placeholder name="three-step-process" />
           </Section>
 
-          <Section maxWidth="5xl" bgType="blue" notConstrained>
+          <Section as="div" maxWidth="5xl" bgType="blue" notConstrained>
             <Placeholder name="three-step-process" />
           </Section>
 
-          <Section maxWidth="full" bgType="white" hasGradient notConstrained>
+          <Section
+            as="div"
+            maxWidth="full"
+            bgType="white"
+            hasGradient
+            notConstrained
+          >
             <Placeholder name="hero-banner" />
           </Section>
 
-          <Section>
+          <Section as="div">
             <Placeholder name="get-started-today" />
           </Section>
 
-          <Section>
+          <Section as="div">
             <Placeholder name="client-testimonials" />
           </Section>
 
@@ -49,7 +61,7 @@ export default function Home() {
             felis dapibus eu.
           </p>
 
-          <Section maxWidth="7xl" notConstrained>
+          <Section as="div" maxWidth="7xl" notConstrained>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis. Aenean iaculis, elit non
@@ -73,11 +85,11 @@ export default function Home() {
             felis dapibus eu.
           </p>
 
-          <Section>
+          <Section as="div">
             <Placeholder name="frequently-asked-questions" />
           </Section>
 
-          <Section>
+          <Section as="div">
             <Placeholder name="news-articles" />
           </Section>
         </Section>
