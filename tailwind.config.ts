@@ -12,8 +12,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Open Sans", "sans-serif"],
-        test: ["sans-serif"],
+        sans: ["Open Sans", "sans-serif"],
       },
       colors: {
         "ui-black": {
