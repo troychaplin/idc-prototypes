@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { SiteLogo } from "./SiteLogo";
 import { Navigation } from "./Navigation";
 import { Aside } from "./Aside";
@@ -8,7 +8,7 @@ export const HeaderContainer = () => {
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY && currentScrollY > 50) {
@@ -18,14 +18,14 @@ export const HeaderContainer = () => {
     }
 
     setLastScrollY(currentScrollY);
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, [handleScroll]);
 
   return (
     <header
@@ -34,9 +34,7 @@ export const HeaderContainer = () => {
       }`}
     >
       <div className="flex justify-between bg-slate-200">
-        <a href="/" className="idc-logo">
-          IDC
-        </a>
+        <div className="idc-logo">IDC</div>
         <nav>Navigation</nav>
         <aside>Aside</aside>
       </div>
