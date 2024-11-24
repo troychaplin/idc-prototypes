@@ -16,10 +16,10 @@ export default function Content() {
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
             maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
             vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
+            dictumst. Phasellus pretium augue est,{" "}
+            <a href="#">semper fringilla lacus</a> auctor in. Fusce eu lectus
+            lacus. Quisque et magna nec eros commodo tristique sit amet a leo.
+            Donec lacinia libero orci, id ultricies felis dapibus eu.
           </p>
           <h2>Header Two</h2>
           <p>

@@ -14,8 +14,40 @@ const config: Config = {
       fontFamily: {
         sans: ["Open Sans", "sans-serif"],
       },
+      typography: (theme: (path: string) => string | undefined) => ({
+        DEFAULT: {
+          css: {
+            "h1, h2, h3, h4": {
+              "font-weight": "600",
+            },
+            a: {
+              "font-weight": "semibold",
+              "text-decoration": "none",
+              "&:hover": {
+                "text-decoration": "underline",
+              },
+            },
+            "--tw-prose-body": theme("colors.idc-black[900]"),
+            "--tw-prose-headings": theme("colors.idc-black[800]"),
+            // "--tw-prose-lead": theme("colors.pink[700]"),
+            "--tw-prose-links": theme("colors.idc-blue[600]"),
+            // "--tw-prose-bold": theme("colors.pink[900]"),
+            // "--tw-prose-counters": theme("colors.pink[600]"),
+            "--tw-prose-bullets": theme("colors.idc-black[600]"),
+            // "--tw-prose-hr": theme("colors.pink[300]"),
+            // "--tw-prose-quotes": theme("colors.pink[900]"),
+            // "--tw-prose-quote-borders": theme("colors.pink[300]"),
+            // "--tw-prose-captions": theme("colors.pink[700]"),
+            // "--tw-prose-code": theme("colors.pink[900]"),
+            // "--tw-prose-pre-code": theme("colors.pink[100]"),
+            // "--tw-prose-pre-bg": theme("colors.pink[900]"),
+            // "--tw-prose-th-borders": theme("colors.pink[300]"),
+            // "--tw-prose-td-borders": theme("colors.pink[200]"),
+          },
+        },
+      }),
       colors: {
-        "ui-black": {
+        "idc-black": {
           DEFAULT: "#000000",
           50: "#f6f6f6",
           100: "#e7e7e7",

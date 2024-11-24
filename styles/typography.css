@@ -6,7 +6,7 @@
 .ui-main h4,
 .ui-main h5,
 .ui-main h6 {
-  @apply font-bold text-ui-black-900;
+  @apply font-bold text-idc-black-900;
 }
 
 .ui-main h1 a,
