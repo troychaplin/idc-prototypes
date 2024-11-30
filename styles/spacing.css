@@ -24,3 +24,9 @@
 .ui-section.bg-idc-blue-100 + .ui-section.to-idc-blue-100 {
   @apply pt-0 mt-0;
 }
+
+/* Global Classes */
+
+.ui-item-spacing > * + * {
+  @apply mt-10;
+}

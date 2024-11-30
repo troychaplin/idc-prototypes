@@ -2,6 +2,7 @@ import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { Placeholder } from "@/components/Placeholder";
 import { SiteHeader } from "@/blocks/SiteHeader";
+import { Hero } from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -10,14 +11,15 @@ export default function Home() {
 
       <Main>
         <Section maxWidth="4xl">
-          <Section
-            as="div"
-            maxWidth="full"
-            bgType="blue"
-            hasGradient
-            notConstrained
-          >
-            <Placeholder name="hero-banner" />
+          <Section as="div" bgType="blue" hasGradient notConstrained>
+            <Hero>
+              <Hero.Content>
+                <p>Test</p>
+              </Hero.Content>
+              <Hero.Image>
+                <p>Image</p>
+              </Hero.Image>
+            </Hero>
           </Section>
 
           <Section as="div" maxWidth="5xl" bgType="blue" notConstrained>
