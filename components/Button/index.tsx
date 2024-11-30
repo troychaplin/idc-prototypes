@@ -1,41 +1,67 @@
-import { idcBlueBg } from '../../utils/colorClasses'
+import { idcBlueBg } from "../../utils/colorClasses";
 
-type BgColorKeys = keyof typeof idcBlueBg
+type BgColorKeys = keyof typeof idcBlueBg;
 
 export interface ButtonProps {
-  color?: 'blue' | 'orange'
-  colorStrength?: BgColorKeys
-  textColor?: 'light' | 'dark'
-  label: string
-  type?: 'button' | 'submit' | 'reset'
-  size?: 'sm' | 'md' | 'lg'
-  isOutline?: boolean
-  onClick?: () => void
+  color?: "blue" | "orange" | "white";
+  colorStrength?: BgColorKeys;
+  textColor?: "light" | "dark";
+  label: string;
+  type?: "button" | "submit" | "reset";
+  size?: "sm" | "md" | "lg";
+  isOutline?: boolean;
+  onClick?: () => void;
 }
 
 export const Button = ({
-  color = 'blue',
+  color = "blue",
   colorStrength = 500,
-  textColor = 'light',
+  textColor = "light",
   label,
-  type = 'button',
-  size = 'md',
+  type = "button",
+  size = "md",
   isOutline = false,
   ...props
 }: ButtonProps) => {
-  const buttonStyles = isOutline
-    ? `idc-button--outline border-idc-${color}-${String(colorStrength)}`
-    : `idc-button--solid bg-idc-${color}-${String(colorStrength)}`
+  let buttonColor = "";
+  switch (color) {
+    case "blue":
+      buttonColor = isOutline
+        ? `border-idc-blue-${String(colorStrength)}`
+        : `bg-idc-blue-${String(colorStrength)}`;
+      break;
+    case "orange":
+      buttonColor = isOutline
+        ? `border-idc-orange-${String(colorStrength)}`
+        : `bg-idc-orange-${String(colorStrength)}`;
+      break;
+    case "white":
+      buttonColor = isOutline ? `border-white` : `bg-white`;
+      break;
+    default:
+      buttonColor = isOutline
+        ? `border-idc-blue-${String(colorStrength)}`
+        : `bg-idc-blue-${String(colorStrength)}`;
+      break;
+  }
 
-  const textStyles = textColor === 'light' ? 'text-white' : 'text-black'
+  const textStyles = textColor === "light" ? "text-white" : "text-black";
+  const buttonStyles = isOutline
+    ? `idc-button--outline ${buttonColor}`
+    : `idc-button--solid ${buttonColor}`;
 
   return (
     <button
       type={type}
-      className={['idc-button', `idc-button--${size}`, buttonStyles, textStyles].join(' ')}
+      className={[
+        "idc-button",
+        `idc-button--${size}`,
+        buttonStyles,
+        textStyles,
+      ].join(" ")}
       {...props}
     >
       {label}
     </button>
-  )
-}
+  );
+};

@@ -24,3 +24,15 @@
 .ui-section.bg-idc-blue-100 + .ui-section.to-idc-blue-100 {
   @apply pt-0 mt-0;
 }
+
+/* Prose Classes */
+
+.ui-prose-first-last > *:first-child,
+.ui-zero-first-last > *:first-child {
+  @apply !mt-0;
+}
+
+.ui-prose-first-last > *:last-child,
+.ui-zero-first-last > *:last-child {
+  @apply !mb-0;
+}

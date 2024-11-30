@@ -1,10 +1,17 @@
 export interface ButtonGroupProps {
-  children?: React.ReactNode
-  isCenter?: boolean
+  children?: React.ReactNode;
+  isCenter?: boolean;
 }
 
-export const ButtonGroup = ({ children, isCenter = false }: ButtonGroupProps) => {
-  const centerButtons = isCenter ? 'justify-center' : 'justify-start'
+export const ButtonGroup = ({
+  children,
+  isCenter = false,
+}: ButtonGroupProps) => {
+  const centerButtons = isCenter ? "justify-center" : "justify-start";
 
-  return <div className={`ui-buttongroup flex ${centerButtons} gap-4`}>{children}</div>
-}
+  return (
+    <div className={`ui-buttongroup flex ${centerButtons} gap-4`}>
+      {children}
+    </div>
+  );
+};

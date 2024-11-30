@@ -1,7 +1,8 @@
 import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { Placeholder } from "@/components/Placeholder";
-import { SiteHeader } from "@/blocks/SiteHeader";
+import { SiteHeader } from "@/blocks/templates/SiteHeader";
+import { HeroDocApostille } from "@/blocks/hero-banners/HeroDocApostille";
 
 export default function Home() {
   return (
@@ -9,26 +10,18 @@ export default function Home() {
       <SiteHeader />
 
       <Main>
-        <Section maxWidth="4xl">
-          <Section
-            as="div"
-            maxWidth="full"
-            bgType="blue"
-            hasGradient
-            notConstrained
-          >
-            <Placeholder name="hero-banner" />
-          </Section>
+        <Section maxWidth="5xl">
+          <HeroDocApostille />
 
-          <Section as="div" maxWidth="5xl" bgType="blue" notConstrained>
+          <Section as="div" notConstrained>
             <Placeholder name="three-step-process" />
           </Section>
 
-          <Section as="div" maxWidth="5xl" bgType="white" notConstrained>
+          <Section as="div" bgType="white" notConstrained>
             <Placeholder name="three-step-process" />
           </Section>
 
-          <Section as="div" maxWidth="5xl" bgType="blue" notConstrained>
+          <Section as="div" bgType="blue" notConstrained>
             <Placeholder name="three-step-process" />
           </Section>
 
