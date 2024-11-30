@@ -1,23 +1,14 @@
-import { uiMaxWidth } from "../../utils/propClasses";
 import { HeroContent } from "./content";
 import { HeroImage } from "./image";
 
-type MaxWidthKeys = keyof typeof uiMaxWidth;
-
 export interface HeroProps {
   children?: React.ReactNode;
-  maxWidth?: MaxWidthKeys;
-  gap?: number;
+  addSpace?: boolean;
 }
 
-export const HeroContainer = ({ children, maxWidth = "5xl" }: HeroProps) => {
-  return (
-    <div
-      className={`not-prose ui-item-spacing ${uiMaxWidth[maxWidth]} mx-auto grid md:grid-cols-2 gap-6`}
-    >
-      {children}
-    </div>
-  );
+export const HeroContainer = ({ children, addSpace = false }: HeroProps) => {
+  const space = addSpace ? "md:mt-8 md:mb-12" : "";
+  return <div className={`grid gap-6 md:grid-cols-2 ${space}`}>{children}</div>;
 };
 
 export const Hero = Object.assign(HeroContainer, {

@@ -1,37 +1,14 @@
 import React from "react";
-import { ButtonGroup } from "../ButtonGroup";
-import { Button } from "../Button";
 
 export interface HeroContentProps {
   children: React.ReactNode;
+  header: string;
 }
 
-export const HeroContent = ({ children }: HeroContentProps) => {
+export const HeroContent = ({ children, header }: HeroContentProps) => {
   return (
-    <div>
-      <h2>Header</h2>
-      <p>
-        We expertly manage all aspects of the document apostille &ndash;
-        authentication & legalization &ndash; attestation &ndash; process for
-        our clients. If you need to present Canadian documents in a foreign
-        jurisdiction we can help!
-      </p>
-      <ButtonGroup>
-        <Button label="Button One" />
-        <Button
-          color="orange"
-          colorStrength={100}
-          label="Button Two"
-          textColor="dark"
-        />
-        <Button
-          color="blue"
-          colorStrength={300}
-          isOutline
-          label="Button Three"
-          textColor="dark"
-        />
-      </ButtonGroup>
+    <div className="space-y-5 ui-prose-first-last md:space-y-8">
+      <h2 className="text-idc-blue-700">{header}</h2>
       {children}
     </div>
   );

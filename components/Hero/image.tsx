@@ -5,7 +5,7 @@ export interface HeroImageProps {
 }
 
 export const HeroImage = ({ children }: HeroImageProps) => {
-  return <div>{children}</div>;
+  return <div className="not-prose">{children}</div>;
 };
 
 HeroImage.displayName = "Hero.Content";
