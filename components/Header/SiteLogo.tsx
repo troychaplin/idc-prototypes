@@ -3,7 +3,7 @@ import React from "react";
 export const SiteLogo = () => {
   return (
     <svg
-      className="idc-logo flex-none w-[155px] h-[50px]"
+      className="idc-logo flex-none w-[111px] md:w-[155px] h-[36px] md:h-[50px]"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 155 50"
