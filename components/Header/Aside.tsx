@@ -13,7 +13,7 @@ export const Aside = () => {
         </svg>
       </button>
       <button className="px-3 py-2 text-sm font-medium border border-solid rounded text-nowrap text-idc-black-800 bg-idc-orange-50 border-idc-orange-500 hover:bg-idc-orange-500 hover:text-white">
-        French
+        FR
       </button>
     </div>
   );
