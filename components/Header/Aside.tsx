@@ -2,17 +2,17 @@ import React from "react";
 
 export const Aside = () => {
   return (
-    <div className="flex items-center gap-5">
-      <button className="w-[18px] h-[18px]">
+    <div className="flex items-center gap-3 md:gap-5">
+      <button className="w-[16px] h-[16px] md:w-[20px] md:h-[20px]">
         <svg
-          className="fill-idc-black-400 hover:fill-idc-orange-500"
+          className="fill-idc-black-300 hover:fill-idc-orange-500"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >
           <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
         </svg>
       </button>
-      <button className="px-4 py-2 text-[15px] font-medium border border-solid rounded text-nowrap text-idc-black-800 bg-idc-orange-50 border-idc-orange-500 hover:bg-idc-orange-500 hover:text-white">
+      <button className="px-3 py-2 text-sm font-medium border border-solid rounded text-nowrap text-idc-black-800 bg-idc-orange-50 border-idc-orange-500 hover:bg-idc-orange-500 hover:text-white">
         En / Fr
       </button>
     </div>
