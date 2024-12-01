@@ -77,7 +77,7 @@ export default function Content() {
             felis dapibus eu.
           </p>
 
-          <Section maxWidth="2xl" bgType="blue" notConstrained>
+          <Section maxWidth="2xl" bgType="blue">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis. Aenean iaculis, elit non
@@ -119,7 +119,7 @@ export default function Content() {
             felis dapibus eu.
           </p>
 
-          <Section maxWidth="2xl" bgType="blue" notConstrained>
+          <Section maxWidth="2xl" bgType="blue">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis. Aenean iaculis, elit non
@@ -258,7 +258,7 @@ export default function Content() {
             felis dapibus eu.
           </p>
 
-          <Section maxWidth="2xl" bgType="blue" notConstrained>
+          <Section maxWidth="2xl" bgType="blue">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis. Aenean iaculis, elit non
@@ -366,7 +366,7 @@ export default function Content() {
             sollicitudin diam fermentum.
           </p>
 
-          <Section maxWidth="4xl" notConstrained>
+          <Section maxWidth="4xl">
             <h3>Header</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -390,11 +390,11 @@ export default function Content() {
             vel semper augue cursus.
           </p>
 
-          <Section maxWidth="5xl" notConstrained bgType="blue">
+          <Section maxWidth="5xl" bgType="blue">
             <Placeholder name="frequently-asked-questions" />
           </Section>
 
-          <Section maxWidth="7xl" notConstrained bgType="blue">
+          <Section maxWidth="7xl" bgType="blue">
             <Placeholder name="news-and-articles" />
           </Section>
 

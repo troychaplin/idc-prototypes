@@ -10,7 +10,8 @@ export const Main = ({ children, noProse }: MainProps) => {
 
   return (
     <main
-      className={`ui-main flex justify-center font-sans pt-16 py-5 md:p-8 md:pt-24 ${proseClass}`}
+      className={`ui-main flex justify-center font-sans  ${proseClass}`}
+      // className={`ui-main flex justify-center font-sans pt-20 py-5 md:p-8 md:pt-24 ${proseClass}`}
     >
       {children}
     </main>

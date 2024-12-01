@@ -8,7 +8,6 @@ export interface SectionProps {
   children?: React.ReactNode;
   as?: "section" | "div" | "header";
   maxWidth?: MaxWidthKeys;
-  notConstrained?: boolean;
   bgType?: "blue" | "white";
   hasGradient?: boolean;
 }
@@ -17,18 +16,20 @@ export const Section = ({
   children,
   as = "section",
   maxWidth = "5xl",
-  notConstrained,
   bgType = "white",
   hasGradient,
 }: SectionProps) => {
   const SectionComponent = as;
 
-  const maxWidthClass = notConstrained
+  // Set full width bg based on type
+  const fullWidthBg = bgType === "blue" || hasGradient ? true : false;
+
+  const maxWidthClass = fullWidthBg
     ? `ui-max-w-child-${maxWidth}`
     : `ui-max-w-${maxWidth}`;
 
-  const mainWrapperClass = notConstrained
-    ? `ui-section ui-layout w-screen ml-offset-center px-6 md:px-8`
+  const mainWrapperClass = fullWidthBg
+    ? `ui-section ui-layout w-screen ml-offset-center`
     : `ui-section ui-layout box-border relative w-full ${maxWidthClass}`;
 
   let bgColor;
@@ -43,8 +44,8 @@ export const Section = ({
 
   return (
     <SectionComponent className={`${mainWrapperClass} ${bgColor}`}>
-      {notConstrained ? (
-        <div className={maxWidthClass}>{children}</div>
+      {fullWidthBg ? (
+        <div className={`${maxWidthClass} px-0 md:px-8`}>{children}</div>
       ) : (
         <>{children}</>
       )}

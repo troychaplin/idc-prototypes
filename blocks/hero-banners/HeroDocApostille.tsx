@@ -7,7 +7,7 @@ import { Button } from "@/components/Button";
 
 export const HeroDocApostille = () => {
   return (
-    <Section as="div" bgType="blue" hasGradient notConstrained>
+    <Section as="div" bgType="blue" hasGradient>
       <Hero addSpace>
         <Hero.Content header="The document apostille process made simple">
           <p>

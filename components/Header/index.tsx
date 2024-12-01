@@ -31,7 +31,7 @@ const HeaderContainer = ({ children }: HeaderProps) => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full px-6 py-4 bg-white idc-header ui-max-w-child-7xl md:px-8 md:py-5 transition-opacity duration-500 ${
+      className={`fixed top-0 z-50 w-full px-6 py-3 h-[62px] md:h-[90px] bg-white idc-header ui-max-w-child-7xl md:px-8 md:py-5 transition-opacity duration-500 ${
         visible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
