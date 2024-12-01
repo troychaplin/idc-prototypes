@@ -3,9 +3,9 @@ import React from "react";
 export const Aside = () => {
   return (
     <div className="flex items-center gap-3 md:gap-5">
-      <button className="w-[16px] h-[16px] md:w-[20px] md:h-[20px]">
+      <button>
         <svg
-          className="fill-idc-black-300 hover:fill-idc-orange-500"
+          className="fill-idc-black-300 hover:fill-idc-orange-500 w-[16px] h-[16px] md:w-[20px] md:h-[20px]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >
@@ -13,7 +13,7 @@ export const Aside = () => {
         </svg>
       </button>
       <button className="px-3 py-2 text-sm font-medium border border-solid rounded text-nowrap text-idc-black-800 bg-idc-orange-50 border-idc-orange-500 hover:bg-idc-orange-500 hover:text-white">
-        En / Fr
+        French
       </button>
     </div>
   );
