@@ -4,6 +4,7 @@ import { Placeholder } from "@/components/Placeholder";
 import { SiteHeader } from "@/blocks/templates/SiteHeader";
 import { HeroDocApostille } from "@/blocks/hero-banners/HeroDocApostille";
 import Image from "next/image";
+import { ThreeStepProcess } from "@/blocks/three-step-process/ThreeStepProcess";
 
 export default function Home() {
   return (
@@ -13,10 +14,7 @@ export default function Home() {
       <Main>
         <Section>
           <HeroDocApostille />
-
-          <Section as="div">
-            <Placeholder name="three-step-process" />
-          </Section>
+          <ThreeStepProcess />
 
           <Section as="div">
             <Placeholder name="get-started-today" />
