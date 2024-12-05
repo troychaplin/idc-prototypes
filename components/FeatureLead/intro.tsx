@@ -1,16 +1,16 @@
 import React from "react";
 
-export interface FeaturedIntroProps {
+export interface FeatureLeadIntroProps {
   headerTop: string;
   headerBottom: string;
   text?: string;
 }
 
-export const FeaturedIntro = ({
+export const FeatureLeadIntro = ({
   headerTop,
   headerBottom,
   text,
-}: FeaturedIntroProps) => {
+}: FeatureLeadIntroProps) => {
   return (
     <>
       <div className="grid lg:grid-cols-3 lg:[&>*:last-child]:col-span-2 gap-6 items-center">
@@ -32,4 +32,4 @@ export const FeaturedIntro = ({
   );
 };
 
-FeaturedIntro.displayName = "Hero.Intro";
+FeatureLeadIntro.displayName = "Hero.Intro";

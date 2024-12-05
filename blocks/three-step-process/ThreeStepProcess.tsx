@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import { Section } from "@/components/Section";
-import { Featured } from "@/components/Featured";
+import { FeatureLead } from "@/components/FeatureLead";
 import { Column } from "@/components/Column";
 
 export const ThreeStepProcess = () => {
   return (
     <Section as="div">
-      <Featured>
-        <Featured.Intro
+      <FeatureLead>
+        <FeatureLead.Intro
           headerTop="Our Process"
           headerBottom="As simple as A-B-C"
           text="We take the anxiety and uncertainty out of the document apostille process in these three simple steps!"
@@ -43,7 +43,7 @@ export const ThreeStepProcess = () => {
             </p>
           </Column.Content>
         </Column>
-      </Featured>
+      </FeatureLead>
     </Section>
   );
 };
