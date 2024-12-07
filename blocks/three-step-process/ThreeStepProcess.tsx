@@ -19,20 +19,47 @@ export const ThreeStepProcess = () => {
           <Card>
             <p>Card #0</p>
           </Card>
-          <Card isRounded>
-            <p>Card #0</p>
+          <Card>
+            <p>Card #1</p>
           </Card>
+          <Card>
+            <p>Card #3</p>
+          </Card>
+        </CardGroup>
+
+        <CardGroup cols={3}>
           <Card hasBorder>
             <p>Card #0</p>
           </Card>
+          <Card hasBorder>
+            <p>Card #1</p>
+          </Card>
+          <Card hasBorder>
+            <p>Card #3</p>
+          </Card>
+        </CardGroup>
+
+        <CardGroup cols={3}>
           <Card hasShadow>
             <p>Card #0</p>
           </Card>
-          <Card hasShadow hasBorder>
+          <Card hasShadow>
+            <p>Card #1</p>
+          </Card>
+          <Card hasShadow>
+            <p>Card #3</p>
+          </Card>
+        </CardGroup>
+
+        <CardGroup cols={3}>
+          <Card hasBorder hasShadow>
             <p>Card #0</p>
           </Card>
-          <Card isRounded hasShadow hasBorder>
-            <p>Card #0</p>
+          <Card hasBorder hasShadow>
+            <p>Card #1</p>
+          </Card>
+          <Card hasBorder hasShadow>
+            <p>Card #3</p>
           </Card>
         </CardGroup>
 
@@ -40,20 +67,47 @@ export const ThreeStepProcess = () => {
           <Card hasBackground>
             <p>Card #0</p>
           </Card>
-          <Card isRounded hasBackground>
+          <Card hasBackground>
+            <p>Card #1</p>
+          </Card>
+          <Card hasBackground>
+            <p>Card #3</p>
+          </Card>
+        </CardGroup>
+
+        <CardGroup cols={3}>
+          <Card hasBackground hasBorder>
             <p>Card #0</p>
           </Card>
-          <Card hasBorder hasBackground>
+          <Card hasBackground hasBorder>
+            <p>Card #1</p>
+          </Card>
+          <Card hasBackground hasBorder>
+            <p>Card #3</p>
+          </Card>
+        </CardGroup>
+
+        <CardGroup cols={3}>
+          <Card hasBackground hasShadow>
             <p>Card #0</p>
           </Card>
-          <Card hasShadow hasBackground>
+          <Card hasBackground hasShadow>
+            <p>Card #1</p>
+          </Card>
+          <Card hasBackground hasShadow>
+            <p>Card #3</p>
+          </Card>
+        </CardGroup>
+
+        <CardGroup cols={3}>
+          <Card hasBackground hasBorder hasShadow>
             <p>Card #0</p>
           </Card>
-          <Card hasShadow hasBorder hasBackground>
-            <p>Card #0</p>
+          <Card hasBackground hasBorder hasShadow>
+            <p>Card #1</p>
           </Card>
-          <Card isRounded hasShadow hasBorder hasBackground>
-            <p>Card #0</p>
+          <Card hasBackground hasBorder hasShadow>
+            <p>Card #3</p>
           </Card>
         </CardGroup>
       </FeatureLead>

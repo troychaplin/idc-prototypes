@@ -24,11 +24,11 @@ export const Card = ({
   const cardBackground = hasBackground ? "bg-idc-black-50" : "bg-white";
 
   const cardSpacing =
-    hasBorder || hasBackground || hasShadow ? "px-5 py-4" : "";
+    hasBorder || hasBackground || hasShadow ? "idc-card--spacing" : "";
 
   return (
     <div
-      className={`idc-card ${cardWidth} ${cardSpacing} ${cardBackground} ${cardShadow} ${cardBorder} border-idc-black-100 rounded-md`}
+      className={`idc-card ${cardSpacing} ${cardWidth} ${cardBackground} ${cardShadow} ${cardBorder} border-idc-black-100 rounded-md`}
     >
       {children}
     </div>
