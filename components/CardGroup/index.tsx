@@ -1,12 +1,16 @@
-import { uiGridColumns } from '../../utils/propClasses'
+import { uiGridColumns } from "../../utils/propClasses";
 
-type GridColumnsKeys = keyof typeof uiGridColumns
+type GridColumnsKeys = keyof typeof uiGridColumns;
 
 export interface CardGroupProps {
-  children?: React.ReactNode
-  cols?: GridColumnsKeys
+  children?: React.ReactNode;
+  cols?: GridColumnsKeys;
 }
 
 export const CardGroup = ({ children, cols = 3 }: CardGroupProps) => {
-  return <div className={`ui-cardgroup grid ${uiGridColumns[cols]} gap-6`}>{children}</div>
-}
+  return (
+    <div className={`ui-cardgroup grid ${uiGridColumns[cols]} gap-4 md:gap-6`}>
+      {children}
+    </div>
+  );
+};

@@ -2,7 +2,8 @@
 import React from "react";
 import { Section } from "@/components/Section";
 import { FeatureLead } from "@/components/FeatureLead";
-import { Column } from "@/components/Column";
+import { CardGroup } from "@/components/CardGroup";
+import { Card } from "@/components/Card";
 
 export const ThreeStepProcess = () => {
   return (
@@ -13,36 +14,48 @@ export const ThreeStepProcess = () => {
           headerBottom="As simple as A-B-C"
           text="We take the anxiety and uncertainty out of the document apostille process in these three simple steps!"
         />
-        <Column cols={3} gap={20} maxWidth="5xl">
-          <Column.Content>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              gravida orci elit, at consectetur lectus iaculis vel. Cras non
-              fringilla velit, a posuere felis. Mauris faucibus dui ultricies
-              ultrices luctus. Aliquam erat volutpat. Vestibulum imperdiet, enim
-              non elementum pulvinar, lacus quam vestibulum eros, ut eleifend
-              sem dui ut quam.
-            </p>
-          </Column.Content>
-          <Column.Content>
-            <p>
-              Nam facilisis pulvinar ligula nec cursus. Mauris ut tempor enim.
-              Nullam sodales eros ut velit ullamcorper fringilla. Fusce a sem
-              est. Vivamus eleifend accumsan pellentesque. Pellentesque in ante
-              urna. Nullam finibus sed nunc ac volutpat. Maecenas lacinia justo
-              a arcu tempor, ac tempor magna faucibus.
-            </p>
-          </Column.Content>
-          <Column.Content>
-            <p>
-              Nam facilisis pulvinar ligula nec cursus. Mauris ut tempor enim.
-              Nullam sodales eros ut velit ullamcorper fringilla. Fusce a sem
-              est. Vivamus eleifend accumsan pellentesque. Pellentesque in ante
-              urna. Nullam finibus sed nunc ac volutpat. Maecenas lacinia justo
-              a arcu tempor, ac tempor magna faucibus.
-            </p>
-          </Column.Content>
-        </Column>
+
+        <CardGroup cols={3}>
+          <Card>
+            <p>Card #0</p>
+          </Card>
+          <Card isRounded>
+            <p>Card #0</p>
+          </Card>
+          <Card hasBorder>
+            <p>Card #0</p>
+          </Card>
+          <Card hasShadow>
+            <p>Card #0</p>
+          </Card>
+          <Card hasShadow hasBorder>
+            <p>Card #0</p>
+          </Card>
+          <Card isRounded hasShadow hasBorder>
+            <p>Card #0</p>
+          </Card>
+        </CardGroup>
+
+        <CardGroup cols={3}>
+          <Card hasBackground>
+            <p>Card #0</p>
+          </Card>
+          <Card isRounded hasBackground>
+            <p>Card #0</p>
+          </Card>
+          <Card hasBorder hasBackground>
+            <p>Card #0</p>
+          </Card>
+          <Card hasShadow hasBackground>
+            <p>Card #0</p>
+          </Card>
+          <Card hasShadow hasBorder hasBackground>
+            <p>Card #0</p>
+          </Card>
+          <Card isRounded hasShadow hasBorder hasBackground>
+            <p>Card #0</p>
+          </Card>
+        </CardGroup>
       </FeatureLead>
     </Section>
   );
