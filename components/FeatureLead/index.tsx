@@ -6,7 +6,7 @@ export interface FeatureLeadProps {
 }
 
 export const FeatureLeadContainer = ({ children }: FeatureLeadProps) => {
-  return <div className={`not-prose grid gap-5 md:gap-10`}>{children}</div>;
+  return <div className={`grid gap-5 md:gap-10`}>{children}</div>;
 };
 
 export const FeatureLead = Object.assign(FeatureLeadContainer, {

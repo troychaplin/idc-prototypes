@@ -4,6 +4,7 @@ import { Section } from "@/components/Section";
 import { FeatureLead } from "@/components/FeatureLead";
 import { CardGroup } from "@/components/CardGroup";
 import { Card } from "@/components/Card";
+import { CardData } from "@/components/Card/data";
 
 export const ThreeStepProcess = () => {
   return (
@@ -16,99 +17,131 @@ export const ThreeStepProcess = () => {
         />
 
         <CardGroup cols={3}>
-          <Card>
-            <p>Card #0</p>
-          </Card>
-          <Card>
-            <p>Card #1</p>
-          </Card>
-          <Card>
-            <p>Card #3</p>
-          </Card>
+          {CardData.slice(0, 3).map(
+            ({ id, link, title, excerpt, image, alt, date }) => (
+              <Card key={id}>
+                <img src={image} alt={alt} width="400" height="300" />
+                <h2>{title}</h2>
+                <time>{date}</time>
+                <p>{excerpt}</p>
+                <p>
+                  <a href={link}>Link</a>
+                </p>
+              </Card>
+            )
+          )}
         </CardGroup>
 
         <CardGroup cols={3}>
-          <Card hasBorder>
-            <p>Card #0</p>
-          </Card>
-          <Card hasBorder>
-            <p>Card #1</p>
-          </Card>
-          <Card hasBorder>
-            <p>Card #3</p>
-          </Card>
+          {CardData.slice(0, 3).map(
+            ({ id, link, title, excerpt, image, alt, date }) => (
+              <Card key={id} hasBorder>
+                <img src={image} alt={alt} width="400" height="300" />
+                <h2>{title}</h2>
+                <time>{date}</time>
+                <p>{excerpt}</p>
+                <p>
+                  <a href={link}>Link</a>
+                </p>
+              </Card>
+            )
+          )}
         </CardGroup>
 
         <CardGroup cols={3}>
-          <Card hasShadow>
-            <p>Card #0</p>
-          </Card>
-          <Card hasShadow>
-            <p>Card #1</p>
-          </Card>
-          <Card hasShadow>
-            <p>Card #3</p>
-          </Card>
+          {CardData.slice(0, 3).map(
+            ({ id, link, title, excerpt, image, alt, date }) => (
+              <Card key={id} hasShadow>
+                <img src={image} alt={alt} width="400" height="300" />
+                <h2>{title}</h2>
+                <time>{date}</time>
+                <p>{excerpt}</p>
+                <p>
+                  <a href={link}>Link</a>
+                </p>
+              </Card>
+            )
+          )}
         </CardGroup>
 
         <CardGroup cols={3}>
-          <Card hasBorder hasShadow>
-            <p>Card #0</p>
-          </Card>
-          <Card hasBorder hasShadow>
-            <p>Card #1</p>
-          </Card>
-          <Card hasBorder hasShadow>
-            <p>Card #3</p>
-          </Card>
+          {CardData.slice(0, 3).map(
+            ({ id, link, title, excerpt, image, alt, date }) => (
+              <Card key={id} hasBorder hasShadow>
+                <img src={image} alt={alt} width="400" height="300" />
+                <h2>{title}</h2>
+                <time>{date}</time>
+                <p>{excerpt}</p>
+                <p>
+                  <a href={link}>Link</a>
+                </p>
+              </Card>
+            )
+          )}
         </CardGroup>
 
         <CardGroup cols={3}>
-          <Card hasBackground>
-            <p>Card #0</p>
-          </Card>
-          <Card hasBackground>
-            <p>Card #1</p>
-          </Card>
-          <Card hasBackground>
-            <p>Card #3</p>
-          </Card>
+          {CardData.slice(0, 3).map(
+            ({ id, link, title, excerpt, image, alt, date }) => (
+              <Card hasBackground key={id}>
+                <img src={image} alt={alt} width="400" height="300" />
+                <h2>{title}</h2>
+                <time>{date}</time>
+                <p>{excerpt}</p>
+                <p>
+                  <a href={link}>Link</a>
+                </p>
+              </Card>
+            )
+          )}
         </CardGroup>
 
         <CardGroup cols={3}>
-          <Card hasBackground hasBorder>
-            <p>Card #0</p>
-          </Card>
-          <Card hasBackground hasBorder>
-            <p>Card #1</p>
-          </Card>
-          <Card hasBackground hasBorder>
-            <p>Card #3</p>
-          </Card>
+          {CardData.slice(0, 3).map(
+            ({ id, link, title, excerpt, image, alt, date }) => (
+              <Card hasBackground key={id} hasBorder>
+                <img src={image} alt={alt} width="400" height="300" />
+                <h2>{title}</h2>
+                <time>{date}</time>
+                <p>{excerpt}</p>
+                <p>
+                  <a href={link}>Link</a>
+                </p>
+              </Card>
+            )
+          )}
         </CardGroup>
 
         <CardGroup cols={3}>
-          <Card hasBackground hasShadow>
-            <p>Card #0</p>
-          </Card>
-          <Card hasBackground hasShadow>
-            <p>Card #1</p>
-          </Card>
-          <Card hasBackground hasShadow>
-            <p>Card #3</p>
-          </Card>
+          {CardData.slice(0, 3).map(
+            ({ id, link, title, excerpt, image, alt, date }) => (
+              <Card hasBackground key={id} hasShadow>
+                <img src={image} alt={alt} width="400" height="300" />
+                <h2>{title}</h2>
+                <time>{date}</time>
+                <p>{excerpt}</p>
+                <p>
+                  <a href={link}>Link</a>
+                </p>
+              </Card>
+            )
+          )}
         </CardGroup>
 
         <CardGroup cols={3}>
-          <Card hasBackground hasBorder hasShadow>
-            <p>Card #0</p>
-          </Card>
-          <Card hasBackground hasBorder hasShadow>
-            <p>Card #1</p>
-          </Card>
-          <Card hasBackground hasBorder hasShadow>
-            <p>Card #3</p>
-          </Card>
+          {CardData.slice(0, 3).map(
+            ({ id, link, title, excerpt, image, alt, date }) => (
+              <Card hasBackground key={id} hasBorder hasShadow>
+                <img src={image} alt={alt} width="400" height="300" />
+                <h2>{title}</h2>
+                <time>{date}</time>
+                <p>{excerpt}</p>
+                <p>
+                  <a href={link}>Link</a>
+                </p>
+              </Card>
+            )
+          )}
         </CardGroup>
       </FeatureLead>
     </Section>

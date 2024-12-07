@@ -28,7 +28,7 @@ export const Card = ({
 
   return (
     <div
-      className={`idc-card ${cardSpacing} ${cardWidth} ${cardBackground} ${cardShadow} ${cardBorder} border-idc-black-100 rounded-md`}
+      className={`not-prose idc-card ${cardSpacing} ${cardWidth} ${cardBackground} ${cardShadow} ${cardBorder} border-idc-black-100 rounded-md`}
     >
       {children}
     </div>
