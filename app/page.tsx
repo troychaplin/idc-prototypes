@@ -2,9 +2,10 @@ import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { Placeholder } from "@/components/Placeholder";
 import { SiteHeader } from "@/blocks/templates/SiteHeader";
-import { HeroDocApostille } from "@/blocks/hero-banners/HeroDocApostille";
+import { HeroHomepage } from "@/blocks/hero-banners/HeroHomepage";
 import Image from "next/image";
-import { ThreeStepProcess } from "@/blocks/three-step-process/ThreeStepProcess";
+import { LeadIn } from "@/components/LeadIn";
+import { IconCards } from "@/blocks/card-groups/IconCards";
 
 export default function Home() {
   return (
@@ -13,8 +14,18 @@ export default function Home() {
 
       <Main>
         <Section>
-          <HeroDocApostille />
-          <ThreeStepProcess />
+          <Section as="div" bgType="blue" hasGradient>
+            <HeroHomepage />
+          </Section>
+
+          <Section as="div">
+            <LeadIn
+              headerTop="Our Process"
+              headerBottom="As simple as A-B-C"
+              text="We take the anxiety and uncertainty out of the document apostille process in these three simple steps!"
+            />
+            <IconCards />
+          </Section>
 
           <Section as="div">
             <Placeholder name="get-started-today" />

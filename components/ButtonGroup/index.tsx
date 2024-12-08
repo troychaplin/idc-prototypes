@@ -10,7 +10,7 @@ export const ButtonGroup = ({
   const centerButtons = isCenter ? "justify-center" : "justify-start";
 
   return (
-    <div className={`ui-buttongroup flex ${centerButtons} gap-4`}>
+    <div className={`ui-buttongroup idc-component flex ${centerButtons} gap-4`}>
       {children}
     </div>
   );
