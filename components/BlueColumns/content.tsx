@@ -10,7 +10,7 @@ export const BlueColumnsContent = ({
   bgType = "light",
 }: BlueColumnsContentProps) => {
   const bgColor =
-    bgType === "light" ? "bg-idc-blue-50" : "bg-idc-blue-700 text-white";
+    bgType === "light" ? "bg-idc-blue-50" : "bg-idc-blue-600 text-white";
   return (
     <div
       className={`ui-prose-first-last px-7 py-6 md:px-16 md:py-12 ${bgColor}`}

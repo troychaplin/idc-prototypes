@@ -15,8 +15,8 @@ export const HeroHomepage = () => {
           jurisdiction we can help!
         </p>
         <ButtonGroup>
-          <Button color="orange" label="Orange Button" colorStrength={600} />
-          <Button label="Blue Button" />
+          <Button label="Primary Button" />
+          <Button label="Secondary Button" textColor="dark" isOutline />
         </ButtonGroup>
       </Hero.Content>
       <Hero.Image>
