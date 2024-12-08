@@ -1,3 +1,11 @@
-.idc-card--spacing {
-  @apply px-3.5 py-2.5 md:px-5 md:py-4;
+.idc-card img {
+  @apply w-40 md:w-full;
+}
+
+.idc-card svg {
+  @apply w-8 h-8 fill-idc-blue-500;
+}
+
+.idc-card--has-image > :not(figure) {
+  @apply md:px-2;
 }

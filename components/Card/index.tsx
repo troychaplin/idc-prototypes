@@ -1,36 +1,31 @@
 import { uiMaxWidth } from "../../utils/propClasses";
+import { CardHeader } from "./header";
+import { CardExcerpt } from "./excerpt";
+import { CardFigure } from "./figure";
 
 type MaxWidthKeys = keyof typeof uiMaxWidth;
 
 export interface CardProps {
   children?: React.ReactNode;
   maxWidth?: MaxWidthKeys;
-  isRounded?: boolean;
-  hasShadow?: boolean;
-  hasBorder?: boolean;
-  hasBackground?: boolean;
+  addSpace?: boolean;
 }
 
-export const Card = ({
-  children,
-  maxWidth,
-  hasShadow,
-  hasBorder,
-  hasBackground,
-}: CardProps) => {
+export const CardContainer = ({ children, maxWidth, addSpace }: CardProps) => {
   const cardWidth = maxWidth ? uiMaxWidth[maxWidth] : "";
-  const cardShadow = hasShadow ? "shadow-md" : "";
-  const cardBorder = hasBorder ? "border border-solid" : "";
-  const cardBackground = hasBackground ? "bg-idc-black-50" : "bg-white";
-
-  const cardSpacing =
-    hasBorder || hasBackground || hasShadow ? "idc-card--spacing" : "";
+  const padding = addSpace ? "idc-card--has-image" : "";
 
   return (
     <div
-      className={`not-prose idc-card ${cardSpacing} ${cardWidth} ${cardBackground} ${cardShadow} ${cardBorder} border-idc-black-100 rounded-md`}
+      className={`not-prose idc-card bg-white rounded-md ${cardWidth} ${padding}`}
     >
       {children}
     </div>
   );
 };
+
+export const Card = Object.assign(CardContainer, {
+  Figure: CardFigure,
+  Header: CardHeader,
+  Excerpt: CardExcerpt,
+});
