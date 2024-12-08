@@ -6,6 +6,7 @@ import { HeroHomepage } from "@/blocks/hero-banners/HeroHomepage";
 import Image from "next/image";
 import { LeadIn } from "@/components/LeadIn";
 import { IconCards } from "@/blocks/card-groups/IconCards";
+import { NewsCards } from "@/blocks/card-groups/NewsCards";
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
           </Section>
 
           <Section as="div">
-            <Placeholder name="articles" />
+            <NewsCards />
           </Section>
 
           <h2>Not Wrapped</h2>
@@ -113,10 +114,6 @@ export default function Home() {
             pulvinar nibh nec lectus ullamcorper, vel semper augue cursus. Duis
             dapibus nisl eget purus dignissim, vel sollicitudin diam fermentum.
           </p>
-
-          <Section as="div">
-            <Placeholder name="testing" />
-          </Section>
         </Section>
       </Main>
     </>

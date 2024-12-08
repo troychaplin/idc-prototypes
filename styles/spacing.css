@@ -19,7 +19,7 @@
 }
 
 .ui-section > .idc-component + .idc-component {
-  @apply mt-4 md:mt-8;
+  @apply mt-6 md:mt-10;
 }
 
 /*

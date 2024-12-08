@@ -15,7 +15,15 @@ export const IconCards = () => {
             </svg>
           </Card.Figure>
           <Card.Header title={title} />
-          <Card.Excerpt text={excerpt} link={link} />
+          <Card.Content text={excerpt} />
+          <Card.Footer>
+            <a
+              href={link}
+              className="text-black idc-button idc-button--sm idc-button--outline hover:border-idc-blue-500 border-idc-orange-600 bg-idc-orange-50 hover:bg-idc-blue-50"
+            >
+              Learn more
+            </a>
+          </Card.Footer>
         </Card>
       ))}
     </CardGroup>

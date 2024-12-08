@@ -10,7 +10,7 @@ export interface CardGroupProps {
 export const CardGroup = ({ children, cols = 3 }: CardGroupProps) => {
   return (
     <div
-      className={`ui-cardgroup idc-component grid ${uiGridColumns[cols]} gap-4 md:gap-8`}
+      className={`ui-cardgroup idc-component grid ${uiGridColumns[cols]} gap-6 md:gap-10`}
     >
       {children}
     </div>

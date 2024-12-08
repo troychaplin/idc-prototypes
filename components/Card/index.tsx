@@ -1,6 +1,7 @@
 import { uiMaxWidth } from "../../utils/propClasses";
 import { CardHeader } from "./header";
-import { CardExcerpt } from "./excerpt";
+import { CardFooter } from "./footer";
+import { CardContent } from "./content";
 import { CardFigure } from "./figure";
 
 type MaxWidthKeys = keyof typeof uiMaxWidth;
@@ -17,7 +18,7 @@ export const CardContainer = ({ children, maxWidth, addSpace }: CardProps) => {
 
   return (
     <div
-      className={`not-prose idc-card bg-white rounded-md ${cardWidth} ${padding}`}
+      className={`not-prose idc-card space-y-4 bg-white rounded-md ${cardWidth} ${padding}`}
     >
       {children}
     </div>
@@ -27,5 +28,6 @@ export const CardContainer = ({ children, maxWidth, addSpace }: CardProps) => {
 export const Card = Object.assign(CardContainer, {
   Figure: CardFigure,
   Header: CardHeader,
-  Excerpt: CardExcerpt,
+  Footer: CardFooter,
+  Content: CardContent,
 });

@@ -5,7 +5,7 @@ export interface CardFooterProps {
 }
 
 export const CardFooter = ({ children }: CardFooterProps) => {
-  return <footer>{children}</footer>;
+  return <footer className="">{children}</footer>;
 };
 
 CardFooter.displayName = "Card.Footer";

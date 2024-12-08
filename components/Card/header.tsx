@@ -23,17 +23,17 @@ export const CardHeader = ({
     : null;
 
   return (
-    <header>
+    <header className="space-y-2">
+      <HeaderComponent className="text-base font-semibold md:text-lg">
+        {title}
+      </HeaderComponent>
+
       {date && (
-        <time className="block mb-2 italic text-sm text-cu-black-600 @sm:md:text-base">
+        <time className="block text-sm italic md:text-base text-idc-black-600">
           {datePrefix && `${datePrefix} `}
           {formattedDate}
         </time>
       )}
-
-      <HeaderComponent className="line-clamp-3 text-lg font-semibold text-cu-black @sm:md:text-xl leading-6 @sm:md:leading-8">
-        {title}
-      </HeaderComponent>
     </header>
   );
 };
