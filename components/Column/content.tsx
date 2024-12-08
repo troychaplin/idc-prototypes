@@ -1,11 +1,11 @@
 import React from "react";
 
-export interface ColumnContentProps {
+export interface ColumnsContentProps {
   children: React.ReactNode;
 }
 
-export const ColumnContent = ({ children }: ColumnContentProps) => {
+export const ColumnsContent = ({ children }: ColumnsContentProps) => {
   return <div>{children}</div>;
 };
 
-ColumnContent.displayName = "Column.Content";
+ColumnsContent.displayName = "Columns.Content";

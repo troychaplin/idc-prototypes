@@ -132,6 +132,9 @@ const config: Config = {
           950: "#461102",
         },
       },
+      gridTemplateColumns: {
+        "60-40": "60% auto",
+      },
       margin: {
         "offset-center": "calc(-50vw + 50%)",
       },

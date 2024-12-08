@@ -1,12 +1,12 @@
 import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { Placeholder } from "@/components/Placeholder";
-import { SiteHeader } from "@/blocks/templates/SiteHeader";
-import { HeroHomepage } from "@/blocks/hero-banners/HeroHomepage";
-import Image from "next/image";
+import { SiteHeader } from "@/blocks/SiteHeader";
+import { HeroHomepage } from "@/blocks/HeroHomepage";
 import { LeadIn } from "@/components/LeadIn";
-import { IconCards } from "@/blocks/card-groups/IconCards";
-import { NewsCards } from "@/blocks/card-groups/NewsCards";
+import { IconCards } from "@/blocks/IconCards";
+import { NewsCards } from "@/blocks/NewsCards";
+import { GetStarted } from "@/blocks/GetStarted";
 
 export default function Home() {
   return (
@@ -28,8 +28,8 @@ export default function Home() {
             <IconCards />
           </Section>
 
-          <Section as="div" bgType="edge">
-            <Placeholder name="get-started-today" />
+          <Section as="div" bgType="edge" maxWidth="7xl">
+            <GetStarted />
           </Section>
 
           <Section as="div" bgType="blue">
@@ -44,7 +44,7 @@ export default function Home() {
             <NewsCards />
           </Section>
 
-          <h2>Not Wrapped</h2>
+          {/* <h2>Not Wrapped</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
@@ -113,7 +113,7 @@ export default function Home() {
             turpis ex, sollicitudin sed est et, pulvinar malesuada nunc. Morbi
             pulvinar nibh nec lectus ullamcorper, vel semper augue cursus. Duis
             dapibus nisl eget purus dignissim, vel sollicitudin diam fermentum.
-          </p>
+          </p> */}
         </Section>
       </Main>
     </>
