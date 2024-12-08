@@ -15,7 +15,7 @@ export default function Home() {
 
       <Main>
         <Section>
-          <Section as="div" bgType="blue" hasGradient>
+          <Section as="div" bgType="gradient">
             <HeroHomepage />
           </Section>
 
@@ -28,7 +28,7 @@ export default function Home() {
             <IconCards />
           </Section>
 
-          <Section as="div">
+          <Section as="div" bgType="edge">
             <Placeholder name="get-started-today" />
           </Section>
 

@@ -135,6 +135,10 @@ const config: Config = {
       margin: {
         "offset-center": "calc(-50vw + 50%)",
       },
+      backgroundImage: {
+        "white-blue-edge":
+          "linear-gradient(to bottom, #ffffff 50%, #e6eef8 50%)",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

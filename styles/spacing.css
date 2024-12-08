@@ -26,7 +26,8 @@
 ** Section Component
 */
 
-.ui-section.bg-idc-blue-100 + .ui-section.bg-idc-blue-100 {
+.ui-section.bg-idc-blue-100 + .ui-section.bg-idc-blue-100,
+.ui-section.bg-white-blue-edge + .ui-section.bg-idc-blue-100 {
   @apply pt-0 mt-0;
 }
 
