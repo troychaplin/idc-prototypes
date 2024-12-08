@@ -1,21 +1,21 @@
 import { uiMaxWidth, uiGridColumns } from "../../utils/propClasses";
-import { ColumnContent } from "./content";
+import { ColumnsContent } from "./content";
 
 type MaxWidthKeys = keyof typeof uiMaxWidth;
 type ColumnKeys = keyof typeof uiGridColumns;
 
-export interface ColumnProps {
+export interface ColumnsProps {
   children?: React.ReactNode;
   maxWidth?: MaxWidthKeys;
   cols?: ColumnKeys;
   gap?: number;
 }
 
-export const ColumnContainer = ({
+export const ColumnsContainer = ({
   children,
   maxWidth = "5xl",
   cols = 2,
-}: ColumnProps) => {
+}: ColumnsProps) => {
   return (
     <div
       className={`ui-column ui-no-max-width ${uiMaxWidth[maxWidth]} mx-auto grid ${uiGridColumns[cols]} gap-4 md:gap-10`}
@@ -25,6 +25,6 @@ export const ColumnContainer = ({
   );
 };
 
-export const Column = Object.assign(ColumnContainer, {
-  Content: ColumnContent,
+export const Columns = Object.assign(ColumnsContainer, {
+  Content: ColumnsContent,
 });

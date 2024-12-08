@@ -15,7 +15,7 @@ export const CardContent = ({ text, link, isExcerpt }: CardContentProps) => {
           {link && (
             <a
               href={link}
-              className="ml-1 font-semibold text-idc-orange-600 hover:underline"
+              className="ml-1 font-semibold text-idc-orange-700 hover:underline"
             >
               More
             </a>

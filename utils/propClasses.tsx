@@ -22,6 +22,7 @@ export const uiGridColumns = {
   6: "md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6",
   "1/3": "lg:grid-cols-3 lg:[&>*:last-child]:col-span-2",
   "2/3": "lg:grid-cols-3 lg:[&>*:first-child]:col-span-2",
+  "60/40": "md:grid-cols-2 lg:grid-cols-60-40",
 };
 
 export const uiFlexRow = {
