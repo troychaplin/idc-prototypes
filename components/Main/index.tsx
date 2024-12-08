@@ -6,7 +6,7 @@ export interface MainProps {
 }
 
 export const Main = ({ children, noProse }: MainProps) => {
-  const proseClass = noProse ? "" : "prose md:prose-lg xl:prose-xl max-w-none";
+  const proseClass = noProse ? "" : "prose md:prose-lg max-w-none";
 
   return (
     <main

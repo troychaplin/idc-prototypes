@@ -1,46 +1,33 @@
-import {
-  uiMaxWidth,
-  uiRoundedCorners,
-  uiDropShadow,
-} from "../../utils/propClasses";
+import { uiMaxWidth } from "../../utils/propClasses";
+import { CardHeader } from "./header";
+import { CardFooter } from "./footer";
+import { CardContent } from "./content";
+import { CardFigure } from "./figure";
 
 type MaxWidthKeys = keyof typeof uiMaxWidth;
-type RoundedKeys = keyof typeof uiRoundedCorners;
-type ShadowKeys = keyof typeof uiDropShadow;
 
 export interface CardProps {
   children?: React.ReactNode;
   maxWidth?: MaxWidthKeys;
-  rounded?: RoundedKeys;
-  shadow?: ShadowKeys;
-  borderWidth?: number;
-  borderColor?: string;
+  addSpace?: boolean;
 }
 
-export const Card = ({
-  children,
-  maxWidth,
-  rounded,
-  shadow,
-  borderWidth,
-  borderColor,
-}: CardProps) => {
+export const CardContainer = ({ children, maxWidth, addSpace }: CardProps) => {
   const cardWidth = maxWidth ? uiMaxWidth[maxWidth] : "";
-  const cardRounded = rounded ? uiRoundedCorners[rounded] : "";
-  const cardShadow = shadow ? uiDropShadow[shadow] : "";
-
-  // Inline style object to handle border color
-  const style = {
-    borderWidth: borderWidth ? borderWidth : "",
-    borderColor: borderWidth && borderColor ? borderColor : "transparent",
-  };
+  const padding = addSpace ? "idc-card--has-image" : "";
 
   return (
     <div
-      className={`idc-card bg-white ${cardWidth} ${cardRounded} ${cardShadow}`}
-      style={style}
+      className={`not-prose idc-card space-y-4 bg-white rounded-md ${cardWidth} ${padding}`}
     >
       {children}
     </div>
   );
 };
+
+export const Card = Object.assign(CardContainer, {
+  Figure: CardFigure,
+  Header: CardHeader,
+  Footer: CardFooter,
+  Content: CardContent,
+});

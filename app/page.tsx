@@ -2,8 +2,11 @@ import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { Placeholder } from "@/components/Placeholder";
 import { SiteHeader } from "@/blocks/templates/SiteHeader";
-import { HeroDocApostille } from "@/blocks/hero-banners/HeroDocApostille";
+import { HeroHomepage } from "@/blocks/hero-banners/HeroHomepage";
 import Image from "next/image";
+import { LeadIn } from "@/components/LeadIn";
+import { IconCards } from "@/blocks/card-groups/IconCards";
+import { NewsCards } from "@/blocks/card-groups/NewsCards";
 
 export default function Home() {
   return (
@@ -12,10 +15,17 @@ export default function Home() {
 
       <Main>
         <Section>
-          <HeroDocApostille />
+          <Section as="div" bgType="blue" hasGradient>
+            <HeroHomepage />
+          </Section>
 
           <Section as="div">
-            <Placeholder name="three-step-process" />
+            <LeadIn
+              headerTop="Our Process"
+              headerBottom="As simple as A-B-C"
+              text="We take the anxiety and uncertainty out of the document apostille process in these three simple steps!"
+            />
+            <IconCards />
           </Section>
 
           <Section as="div">
@@ -31,7 +41,7 @@ export default function Home() {
           </Section>
 
           <Section as="div">
-            <Placeholder name="articles" />
+            <NewsCards />
           </Section>
 
           <h2>Not Wrapped</h2>
@@ -104,10 +114,6 @@ export default function Home() {
             pulvinar nibh nec lectus ullamcorper, vel semper augue cursus. Duis
             dapibus nisl eget purus dignissim, vel sollicitudin diam fermentum.
           </p>
-
-          <Section as="div">
-            <Placeholder name="testing" />
-          </Section>
         </Section>
       </Main>
     </>
