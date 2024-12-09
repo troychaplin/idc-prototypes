@@ -1,15 +1,18 @@
 "use client";
 import { BlueColumns } from "@/components/BlueColumns";
+import { Header } from "@/components/Header";
 import React from "react";
 
 export const GetStarted = () => {
   return (
-    <BlueColumns>
+    <BlueColumns cols={2}>
       <BlueColumns.Content>
-        <h2>
-          Global Recognition, Local Expertise: Your Documents, Validated
-          Everywhere
-        </h2>
+        <Header
+          title="Global Recognition, Local Expertise: Your Documents, Validated
+          Everywhere"
+          size="md"
+          isItalic
+        />
         <p>
           From apostilles to attestations, our specialized services ensure
           global recognition for your documents. We're your trusted partner in

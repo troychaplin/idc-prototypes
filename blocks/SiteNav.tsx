@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Header } from "@/components/Header";
+import { SiteHeader } from "@/components/SiteHeader";
 import Link from "next/link";
 
 const navItems = [
@@ -11,20 +11,20 @@ const navItems = [
   { label: "Resources", href: "#" },
 ];
 
-export const SiteHeader = () => {
+export const SiteNav = () => {
   return (
-    <Header>
+    <SiteHeader>
       <Link href="/" aria-label="Go to homepage">
-        <Header.SiteLogo />
+        <SiteHeader.SiteLogo />
       </Link>
-      <Header.Navigation>
+      <SiteHeader.Navigation>
         {navItems.map((item, index) => (
           <li key={index} className="idc-navitem">
             <Link href={item.href}>{item.label}</Link>
           </li>
         ))}
-      </Header.Navigation>
-      <Header.Aside />
-    </Header>
+      </SiteHeader.Navigation>
+      <SiteHeader.Aside />
+    </SiteHeader>
   );
 };

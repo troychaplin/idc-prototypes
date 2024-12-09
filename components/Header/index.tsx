@@ -1,47 +1,60 @@
-"use client";
-import React, { useState, useEffect, useCallback } from "react";
-import { SiteLogo } from "./SiteLogo";
-import { Navigation } from "./Navigation";
-import { Aside } from "./Aside";
+import React from "react";
+import { headerSizeClasses } from "../../utils/propClasses";
+
+type headerSizeKeys = keyof typeof headerSizeClasses;
 
 export interface HeaderProps {
   children?: React.ReactNode;
+  as?: "h1" | "h2" | "h3";
+  title: string;
+  size?: headerSizeKeys;
+  isCenter?: boolean;
+  isItalic?: boolean;
 }
 
-const HeaderContainer = ({ children }: HeaderProps) => {
-  const [visible, setVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+export const Header = ({
+  children,
+  as = "h2",
+  title,
+  size = "lg",
+  isCenter,
+  isItalic,
+}: HeaderProps) => {
+  const HeaderComponent = as;
+  const centerContent = isCenter ? "text-center mx-auto" : "";
+  const italicContent = isItalic ? "italic" : "";
 
-  const handleScroll = useCallback(() => {
-    const currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY && currentScrollY > 50) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-    setLastScrollY(currentScrollY);
-  }, [lastScrollY]);
+  // Set spacing for header with underline
+  let headerPadding;
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [handleScroll]);
+  switch (size) {
+    case "sm":
+      headerPadding = "pb-3.5";
+      break;
+    case "md":
+      headerPadding = "pb-4";
+      break;
+    case "lg":
+      headerPadding = "pb-5";
+      break;
+    case "xl":
+      headerPadding = "pb-6";
+      break;
+    default:
+      headerPadding = "pb-5";
+      break;
+  }
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full px-6 py-3 h-[62px] md:h-[90px] bg-white idc-header ui-max-w-child-7xl md:px-8 md:py-5 transition-opacity duration-500 ${
-        visible ? "opacity-100" : "opacity-0 pointer-events-none"
-      }`}
+      className={`max-w-4xl ui-prose-first-last idc-component ${centerContent}`}
     >
-      <div className="flex justify-between gap-2">{children}</div>
+      <HeaderComponent
+        className={`not-prose text-idc-blue-800 ${headerSizeClasses[size]} ${italicContent} ${headerPadding} last:pb-0`}
+      >
+        {title}
+      </HeaderComponent>
+      {children}
     </header>
   );
 };
-
-export const Header = Object.assign(HeaderContainer, {
-  SiteLogo,
-  Navigation,
-  Aside,
-});
