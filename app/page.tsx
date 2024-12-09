@@ -8,6 +8,7 @@ import { IconCards } from "@/blocks/IconCards";
 import { NewsCards } from "@/blocks/NewsCards";
 import { GetStarted } from "@/blocks/GetStarted";
 import { Header } from "@/components/Header";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,12 +16,12 @@ export default function Home() {
       <SiteNav />
 
       <Main>
-        <Section>
-          <Section as="div" maxWidth="7xl" bgType="gradient">
+        <Section maxWidth="4xl">
+          <Section as="div" maxWidth="6xl" bgType="gradient">
             <HeroHomepage />
           </Section>
 
-          <Section as="div">
+          <Section as="div" bgType="white">
             <LeadIn
               headerTop="Our Process"
               headerBottom="As simple as A-B-C"
@@ -29,7 +30,7 @@ export default function Home() {
             <IconCards />
           </Section>
 
-          <Section as="div" bgType="edge" maxWidth="6xl">
+          <Section as="div" maxWidth="6xl" bgType="edge">
             <GetStarted />
           </Section>
 
@@ -37,11 +38,11 @@ export default function Home() {
             <Placeholder name="client-testimonials" />
           </Section>
 
-          <Section as="div">
+          <Section as="div" maxWidth="4xl" bgType="white">
             <Placeholder name="frequently-asked-questions" />
           </Section>
 
-          <Section as="div">
+          <Section as="div" bgType="white">
             <Header
               title="Stay Informed, Stay Empowered"
               size="md"
@@ -58,7 +59,7 @@ export default function Home() {
             <NewsCards />
           </Section>
 
-          {/* <h2>Not Wrapped</h2>
+          <h2>Not Wrapped</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
@@ -127,7 +128,7 @@ export default function Home() {
             turpis ex, sollicitudin sed est et, pulvinar malesuada nunc. Morbi
             pulvinar nibh nec lectus ullamcorper, vel semper augue cursus. Duis
             dapibus nisl eget purus dignissim, vel sollicitudin diam fermentum.
-          </p> */}
+          </p>
         </Section>
       </Main>
     </>

@@ -1,5 +1,5 @@
 .idc-card img {
-  @apply w-40 md:w-full;
+  @apply w-32 md:w-full;
 }
 
 .idc-card svg {

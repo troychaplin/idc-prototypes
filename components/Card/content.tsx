@@ -8,7 +8,7 @@ export interface CardContentProps {
 
 export const CardContent = ({ text, link, isExcerpt }: CardContentProps) => {
   return (
-    <p className="text-sm leading-6 md:leading-7 md:text-base">
+    <p className="mt-2 text-base font-light leading-7 md:mt-3 md:text-lg">
       {isExcerpt && text && text.length > 170 ? (
         <>
           {text.substring(0, 170)}...
