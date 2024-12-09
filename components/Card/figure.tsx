@@ -5,7 +5,7 @@ export interface CardFigureProps {
 }
 
 export const CardFigure = ({ children }: CardFigureProps) => {
-  return <figure className="mb-3 md:mb-5">{children}</figure>;
+  return <figure className="mb-4 md:mb-6">{children}</figure>;
 };
 
 CardFigure.displayName = "Card.Figure";

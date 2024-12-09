@@ -1,0 +1,7 @@
+.idc-header > * {
+  @apply max-w-4xl;
+}
+
+.idc-header.text-center > * {
+  @apply md:mx-auto;
+}

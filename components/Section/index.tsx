@@ -8,19 +8,19 @@ export interface SectionProps {
   children?: React.ReactNode;
   as?: "section" | "div" | "header";
   maxWidth?: MaxWidthKeys;
-  bgType?: "white" | "blue" | "gradient" | "edge";
+  bgType?: "none" | "white" | "blue" | "gradient" | "edge";
 }
 
 export const Section = ({
   children,
   as = "section",
   maxWidth = "5xl",
-  bgType = "white",
+  bgType = "none",
 }: SectionProps) => {
   const SectionComponent = as;
 
   // Set full width bg based on type
-  const fullWidthBg = bgType !== "white" ? true : false;
+  const fullWidthBg = bgType !== "none" ? true : false;
 
   const maxWidthClass = fullWidthBg
     ? `ui-max-w-child-${maxWidth}`

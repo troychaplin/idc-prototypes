@@ -18,7 +18,7 @@ export const CardContainer = ({ children, maxWidth, addSpace }: CardProps) => {
 
   return (
     <div
-      className={`not-prose idc-card space-y-4 bg-white rounded-md ${cardWidth} ${padding}`}
+      className={`not-prose idc-card bg-white rounded-md ${cardWidth} ${padding}`}
     >
       {children}
     </div>

@@ -21,7 +21,7 @@ export const Header = ({
   isItalic,
 }: HeaderProps) => {
   const HeaderComponent = as;
-  const centerContent = isCenter ? "text-center mx-auto" : "";
+  const centerContent = isCenter ? "md:text-center" : "";
   const italicContent = isItalic ? "italic" : "";
 
   // Set spacing for header with underline
@@ -47,7 +47,7 @@ export const Header = ({
 
   return (
     <header
-      className={`max-w-4xl ui-prose-first-last idc-component ${centerContent}`}
+      className={`ui-prose-first-last idc-header idc-component ${centerContent}`}
     >
       <HeaderComponent
         className={`not-prose text-idc-blue-800 ${headerSizeClasses[size]} ${italicContent} ${headerPadding} last:pb-0`}

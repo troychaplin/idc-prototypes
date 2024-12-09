@@ -18,8 +18,9 @@
   @apply mt-10;
 }
 
-.ui-section > .idc-component + .idc-component {
-  @apply mt-6 md:mt-10;
+.ui-section > .idc-component + .idc-component,
+.ui-section > div > .idc-component + .idc-component {
+  @apply mt-8 md:mt-10;
 }
 
 /*
