@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "../Header";
 
 export interface HeroContentProps {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ export interface HeroContentProps {
 export const HeroContent = ({ children, header }: HeroContentProps) => {
   return (
     <div className="space-y-5 ui-prose-first-last md:space-y-8">
-      <h2 className="text-idc-blue-700">{header}</h2>
+      <Header title={header} size="xl" />
       {children}
     </div>
   );

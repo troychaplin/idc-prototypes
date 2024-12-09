@@ -1,21 +1,22 @@
 import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { Placeholder } from "@/components/Placeholder";
-import { SiteHeader } from "@/blocks/SiteHeader";
+import { SiteNav } from "@/blocks/SiteNav";
 import { HeroHomepage } from "@/blocks/HeroHomepage";
 import { LeadIn } from "@/components/LeadIn";
 import { IconCards } from "@/blocks/IconCards";
 import { NewsCards } from "@/blocks/NewsCards";
 import { GetStarted } from "@/blocks/GetStarted";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
     <>
-      <SiteHeader />
+      <SiteNav />
 
       <Main>
         <Section>
-          <Section as="div" bgType="gradient">
+          <Section as="div" maxWidth="7xl" bgType="gradient">
             <HeroHomepage />
           </Section>
 
@@ -28,7 +29,7 @@ export default function Home() {
             <IconCards />
           </Section>
 
-          <Section as="div" bgType="edge" maxWidth="7xl">
+          <Section as="div" bgType="edge" maxWidth="6xl">
             <GetStarted />
           </Section>
 
@@ -41,6 +42,19 @@ export default function Home() {
           </Section>
 
           <Section as="div">
+            <Header
+              title="Stay Informed, Stay Empowered"
+              size="md"
+              isItalic
+              isCenter
+            >
+              <p>
+                Dive into our articles to uncover everything you need to know
+                about the apostille process—also called authentication,
+                legalization, or attestation. Get clear insights and expert
+                advice to make your document journey smooth and stress-free!
+              </p>
+            </Header>
             <NewsCards />
           </Section>
 

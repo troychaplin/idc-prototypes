@@ -20,7 +20,7 @@ const config: Config = {
             {
               "--tw-prose-body": theme("colors.idc-black[900]"),
               "--tw-prose-headings": theme("colors.idc-black[800]"),
-              "--tw-prose-links": theme("colors.idc-blue[600]"),
+              "--tw-prose-links": theme("colors.idc-orange[700]"),
               "--tw-prose-bullets": theme("colors.idc-black[600]"),
               // "--tw-prose-quotes": theme("colors.pink[900]"),
               // "--tw-prose-quote-borders": theme("colors.pink[300]"),
