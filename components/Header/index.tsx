@@ -21,7 +21,7 @@ export const Header = ({
   isItalic,
 }: HeaderProps) => {
   const HeaderComponent = as;
-  const centerContent = isCenter ? "md:text-center" : "";
+  const centerContent = isCenter ? "idc-header--center" : "";
   const italicContent = isItalic ? "italic" : "";
 
   // Set spacing for header with underline

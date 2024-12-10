@@ -9,7 +9,7 @@ export interface HeroContentProps {
 export const HeroContent = ({ children, header }: HeroContentProps) => {
   return (
     <div className="space-y-5 ui-prose-first-last md:space-y-8">
-      <Header title={header} size="xl" />
+      <Header title={header} size="lg" />
       {children}
     </div>
   );
