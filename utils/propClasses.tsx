@@ -25,6 +25,13 @@ export const uiGridColumns = {
   "60/40": "md:grid-cols-2 lg:grid-cols-60-40",
 };
 
+export const uiColumns = {
+  1: "columns-1",
+  2: "columns-1 md:columns-2",
+  3: "columns-1 sm:columns-2 md:columns-3",
+  4: "columns-1 md:columns-2 lg:columns-4",
+};
+
 export const uiFlexRow = {
   sm: "sm:flex-row",
   md: "md:flex-row",

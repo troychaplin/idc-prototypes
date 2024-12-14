@@ -9,6 +9,7 @@ import { NewsCards } from "@/blocks/NewsCards";
 import { GetStarted } from "@/blocks/GetStarted";
 import { Header } from "@/components/Header";
 import Image from "next/image";
+import { Testimonials } from "@/blocks/Testimonials";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
           </Section>
 
           <Section as="div" bgType="blue">
-            <Placeholder name="client-testimonials" />
+            <Testimonials />
           </Section>
 
           <Section as="div" maxWidth="4xl" bgType="white">
