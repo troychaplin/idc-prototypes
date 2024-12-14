@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 const config: Config = {
   content: [
@@ -132,6 +133,12 @@ const config: Config = {
           950: "#461102",
         },
       },
+      columnCount: {
+        1: "1",
+        2: "2",
+        3: "3",
+        4: "4",
+      },
       gridTemplateColumns: {
         "60-40": "60% auto",
       },
@@ -144,6 +151,27 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    function ({ addUtilities }: PluginAPI) {
+      addUtilities(
+        {
+          ".columns-1": {
+            columnCount: "1",
+          },
+          ".columns-2": {
+            columnCount: "2",
+          },
+          ".columns-3": {
+            columnCount: "3",
+          },
+          ".columns-4": {
+            columnCount: "4",
+          },
+        },
+        {}
+      );
+    },
+  ],
 };
 export default config;
