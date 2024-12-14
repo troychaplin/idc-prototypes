@@ -17,37 +17,37 @@ export const Testimonials = () => {
 
       <CardGroup cols={3} layout="masonry">
         <div
-          className="mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
+          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
           style={{ height: "180px" }}
         >
           1
         </div>
         <div
-          className="mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
+          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
           style={{ height: "270px" }}
         >
           2
         </div>
         <div
-          className="mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
+          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
           style={{ height: "250px" }}
         >
           3
         </div>
         <div
-          className="mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
+          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
           style={{ height: "300px" }}
         >
           4
         </div>
         <div
-          className="mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
+          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
           style={{ height: "280px" }}
         >
           5
         </div>
         <div
-          className="mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
+          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
           style={{ height: "220px" }}
         >
           6
