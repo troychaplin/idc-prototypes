@@ -29,7 +29,7 @@ export const CardHeader = ({
       </HeaderComponent>
 
       {date && (
-        <time className="block mt-2 text-base italic text-idc-black-400 md:mt-3">
+        <time className="block mt-2 text-base italic text-idc-black-500 md:mt-3">
           {datePrefix && `${datePrefix} `}
           {formattedDate}
         </time>
