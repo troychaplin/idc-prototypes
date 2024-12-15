@@ -17,9 +17,15 @@ export const Testimonials = () => {
       </Header>
 
       <CardGroup cols={3} layout="masonry">
-        {CardData.slice(0, 9).map(({ id, quote, author }) => (
+        {CardData.slice(0, 9).map(({ id, quote, author, image }) => (
           <Card key={id}>
-            <Card.Quote cite={author}>{quote}</Card.Quote>
+            <Card.Quote cite={author}>
+              {quote}
+              <Card.Cite>
+                <img src={image} alt="Person's Name" />
+                {author}
+              </Card.Cite>
+            </Card.Quote>
           </Card>
         ))}
       </CardGroup>

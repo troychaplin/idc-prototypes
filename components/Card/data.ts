@@ -172,7 +172,7 @@ export const CardData = [
     excerpt:
       "Traditional significant win address provide white. Resource subject how imagine summer attack various. Realize happen number interesting. American air ability ground do do expert. Kind mind human risk within.",
     link: "#",
-    image: "https://picsum.photos/id/97/600/400",
+    image: "https://picsum.photos/id/96/600/400",
     alt: "Ten heavy lawyer position.",
     icon: "book",
     tags: {

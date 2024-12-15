@@ -3,6 +3,7 @@ import { CardHeader } from "./header";
 import { CardFooter } from "./footer";
 import { CardContent } from "./content";
 import { CardQuote } from "./quote";
+import { CardCite } from "./cite";
 import { CardFigure } from "./figure";
 
 type MaxWidthKeys = keyof typeof uiMaxWidth;
@@ -28,4 +29,5 @@ export const Card = Object.assign(CardContainer, {
   Footer: CardFooter,
   Content: CardContent,
   Quote: CardQuote,
+  Cite: CardCite,
 });

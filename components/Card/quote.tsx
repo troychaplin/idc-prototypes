@@ -5,11 +5,10 @@ export interface CardQuoteProps {
   cite?: string;
 }
 
-export const CardQuote = ({ children, cite }: CardQuoteProps) => {
+export const CardQuote = ({ children }: CardQuoteProps) => {
   return (
-    <div className="px-5 py-3.5 bg-white rounded-md md:px-8 md:py-6 shadow-md">
+    <div className="idc-card-quote text-base leading-7 px-5 py-3.5 bg-white rounded-md md:px-8 md:py-6 shadow-md">
       {children}
-      <footer>{cite}</footer>
     </div>
   );
 };
