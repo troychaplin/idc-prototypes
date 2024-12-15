@@ -23,6 +23,9 @@ export const CardData = [
         },
       ],
     },
+    author: "John Doe",
+    quote:
+      "An insightful and detailed approach to modern business strategies. Produce beat reflect manager wonder last since music.",
   },
   {
     id: 2,
@@ -48,6 +51,9 @@ export const CardData = [
         },
       ],
     },
+    author: "Jane Smith",
+    quote:
+      "Lawyer sense second individual outside participant since shoulder. International though meeting hour some must box fly. Story Mr power way ever bring left. Nature field back or watch carry.",
   },
   {
     id: 3,
@@ -73,6 +79,9 @@ export const CardData = [
         },
       ],
     },
+    author: "Alice Johnson",
+    quote:
+      "A fascinating look into the modern lifestyle and its challenges. Including some common mention appear visit kind interesting.",
   },
   {
     id: 4,
@@ -98,6 +107,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Robert Brown",
+    quote: "An in-depth analysis of modern technology and business practices.",
   },
   {
     id: 5,
@@ -123,6 +134,9 @@ export const CardData = [
         },
       ],
     },
+    author: "Emily Davis",
+    quote:
+      "Image yourself door skill. Election something father language again involve film. Share affect range travel brother company. How time recent. Either expect example image.",
   },
   {
     id: 6,
@@ -148,6 +162,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Michael Wilson",
+    quote: "An engaging read on the responsibilities and wonders of education.",
   },
   {
     id: 7,
@@ -173,6 +189,9 @@ export const CardData = [
         },
       ],
     },
+    author: "Sarah Martinez",
+    quote:
+      "Traditional significant win address provide white. Resource subject how imagine summer attack various. Realize happen number interesting.",
   },
   {
     id: 8,
@@ -198,6 +217,8 @@ export const CardData = [
         },
       ],
     },
+    author: "David Lee",
+    quote: "An interesting take on the skills required in various countries.",
   },
   {
     id: 9,
@@ -223,6 +244,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Laura Clark",
+    quote: "A comprehensive look at the determination of Congress.",
   },
   {
     id: 10,
@@ -248,6 +271,8 @@ export const CardData = [
         },
       ],
     },
+    author: "James Rodriguez",
+    quote: "A captivating story about the art of painting and its nuances.",
   },
   {
     id: 11,
@@ -273,6 +298,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Patricia Lewis",
+    quote: "A beautiful exploration of inner beauty and its impact.",
   },
   {
     id: 12,
@@ -298,6 +325,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Christopher Walker",
+    quote: "A unique perspective on animal art and its significance.",
   },
   {
     id: 13,
@@ -323,6 +352,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Daniel Harris",
+    quote: "An insightful look at the differences in news design.",
   },
   {
     id: 14,
@@ -348,6 +379,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Jessica Young",
+    quote: "A successful exploration of college life and its challenges.",
   },
   {
     id: 15,
@@ -373,6 +406,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Thomas King",
+    quote: "A comprehensive agreement on various station topics.",
   },
   {
     id: 16,
@@ -398,6 +433,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Nancy Scott",
+    quote: "A thought-provoking theory on various outside elements.",
   },
   {
     id: 17,
@@ -423,6 +460,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Karen Allen",
+    quote: "A detailed look at the attention required by players.",
   },
   {
     id: 18,
@@ -448,6 +487,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Brian Wright",
+    quote: "An engaging read on the factors affecting federal executives.",
   },
   {
     id: 19,
@@ -473,6 +514,8 @@ export const CardData = [
         },
       ],
     },
+    author: "Barbara Green",
+    quote: "A standard-setting exploration of modern entertainment.",
   },
   {
     id: 20,
@@ -498,5 +541,7 @@ export const CardData = [
         },
       ],
     },
+    author: "Steven Hall",
+    quote: "A strong and informative read on modern scientific advancements.",
   },
 ];

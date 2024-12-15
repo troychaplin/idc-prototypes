@@ -9,7 +9,7 @@ export const NewsCards = () => {
     <CardGroup cols={3}>
       {CardData.slice(0, 3).map(
         ({ id, link, title, excerpt, image, alt, date }) => (
-          <Card key={id} addSpace>
+          <Card key={id}>
             <Card.Figure>
               <img
                 className="rounded-md"

@@ -17,7 +17,7 @@ export const CardGroup = ({
   const layoutClasses =
     layout === "grid"
       ? `grid ${uiGridColumns[cols as GridColumnsKeys]}`
-      : `${uiColumns[cols as ColumnsKeys]}`;
+      : `ui-masonry ${uiColumns[cols as ColumnsKeys]}`;
 
   return (
     <div
