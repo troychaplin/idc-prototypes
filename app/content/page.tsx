@@ -12,9 +12,7 @@ export default function Home() {
 
       <Main>
         <Section maxWidth="4xl">
-          <Section as="div" maxWidth="6xl" bgType="gradient">
-            <HeroHomepage />
-          </Section>
+          <HeroHomepage />
 
           <h1>Header One</h1>
           <p>

@@ -44,6 +44,14 @@ export const uiFlexCol = {
   lg: "lg:flex-col",
 };
 
+export const uiBgTypes = {
+  none: "",
+  white: "bg-white",
+  blue: "bg-idc-blue-100 py-8 md:py-16",
+  gradient: "bg-gradient-to-t from-idc-blue-100 to-white py-8 md:py-16",
+  edge: "bg-white-blue-edge py-8 md:py-16",
+};
+
 export const uiRoundedCorners = {
   none: "rounded-none",
   sm: "rounded-sm",

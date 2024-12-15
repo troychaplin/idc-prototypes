@@ -10,14 +10,14 @@
 
 /* Set top margin on consecutive sections */
 .ui-section + .ui-section,
-.ui-section + :not(.ui-section),
-:not(.ui-section) + .ui-section,
 .ui-section.from-white + .ui-section.bg-white,
 .ui-main > .ui-section > .ui-section.bg-white:first-child,
 .ui-section > .ui-layout + .ui-layout {
   @apply mt-8 md:mt-16;
 }
 
+.ui-section + :not(.ui-section),
+:not(.ui-section) + .ui-section,
 .ui-section > .idc-component + .idc-component,
 .ui-section > div > .idc-component + .idc-component {
   @apply mt-8 md:mt-12;
@@ -28,7 +28,7 @@
 */
 
 .ui-section.bg-white + .ui-section.bg-white-blue-edge {
-  @apply mt-4 md:mt-8;
+  @apply mt-0;
 }
 
 .ui-section.bg-idc-blue-100 + .ui-section.bg-idc-blue-100,

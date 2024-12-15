@@ -6,8 +6,11 @@ import { Button } from "@/components/Button";
 
 export const HeroHomepage = () => {
   return (
-    <Hero addSpace>
-      <Hero.Content header="The document apostille process made simple">
+    <Hero maxWidth="7xl" bgType="gradient" cols={2}>
+      <Hero.Content
+        title="The document apostille process made simple"
+        headerType="h1"
+      >
         <p>
           We expertly manage all aspects of the document apostille &ndash;
           authentication & legalization &ndash; attestation &ndash; process for
@@ -19,9 +22,9 @@ export const HeroHomepage = () => {
           <Button label="Secondary Button" textColor="dark" isOutline />
         </ButtonGroup>
       </Hero.Content>
-      <Hero.Image>
-        <p>Image</p>
-      </Hero.Image>
+      <Hero.Media>
+        <p>Media</p>
+      </Hero.Media>
     </Hero>
   );
 };
