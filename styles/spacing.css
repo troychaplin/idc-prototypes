@@ -3,38 +3,37 @@
 */
 
 .ui-main {
-  @apply py-5 pt-[62px] md:p-8 md:pt-[90px];
+  @apply pb-8 pt-[62px] md:px-8 md:pb-12 md:pt-[90px];
 }
 
-.ui-main > .ui-section > .ui-section.bg-white:first-child {
-  @apply mt-10;
-}
+/* .ui-main >  */
 
 /* Set top margin on consecutive sections */
 .ui-section + .ui-section,
 .ui-section + :not(.ui-section),
 :not(.ui-section) + .ui-section,
-.ui-section.from-white + .ui-section.bg-white {
-  @apply mt-10;
+.ui-section.from-white + .ui-section.bg-white,
+.ui-main > .ui-section > .ui-section.bg-white:first-child,
+.ui-section > .ui-layout + .ui-layout {
+  @apply mt-8 md:mt-16;
 }
 
 .ui-section > .idc-component + .idc-component,
 .ui-section > div > .idc-component + .idc-component {
-  @apply mt-8 md:mt-10;
+  @apply mt-8 md:mt-12;
 }
 
 /*
 ** Section Component
 */
 
+.ui-section.bg-white + .ui-section.bg-white-blue-edge {
+  @apply mt-4 md:mt-8;
+}
+
 .ui-section.bg-idc-blue-100 + .ui-section.bg-idc-blue-100,
 .ui-section.bg-white-blue-edge + .ui-section.bg-idc-blue-100 {
   @apply pt-0 mt-0;
-}
-
-/* Set top margin on consecutive components that are direct descendants of section */
-.ui-section > .ui-layout + .ui-layout {
-  @apply mt-10;
 }
 
 /* Remove spacing when blues come up against each other */
