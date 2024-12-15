@@ -1,5 +1,6 @@
 "use client";
 import { Card } from "@/components/Card";
+import { CardData } from "@/components/Card/data";
 import { CardGroup } from "@/components/CardGroup";
 import { Header } from "@/components/Header";
 import React from "react";
@@ -16,42 +17,17 @@ export const Testimonials = () => {
       </Header>
 
       <CardGroup cols={3} layout="masonry">
-        <div
-          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
-          style={{ height: "180px" }}
-        >
-          1
-        </div>
-        <div
-          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
-          style={{ height: "270px" }}
-        >
-          2
-        </div>
-        <div
-          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
-          style={{ height: "250px" }}
-        >
-          3
-        </div>
-        <div
-          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
-          style={{ height: "300px" }}
-        >
-          4
-        </div>
-        <div
-          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
-          style={{ height: "280px" }}
-        >
-          5
-        </div>
-        <div
-          className="px-8 py-6 mb-8 bg-white rounded-md md:mb-10 break-inside-avoid"
-          style={{ height: "220px" }}
-        >
-          6
-        </div>
+        {CardData.slice(0, 9).map(({ id, quote, author, image }) => (
+          <Card key={id}>
+            <Card.Quote cite={author}>
+              {quote}
+              <Card.Cite>
+                <img src={image} alt="Person's Name" />
+                {author}
+              </Card.Cite>
+            </Card.Quote>
+          </Card>
+        ))}
       </CardGroup>
     </>
   );

@@ -6,6 +6,6 @@
   @apply w-8 h-8 md:w-10 md:h-10 fill-idc-blue-400;
 }
 
-.idc-card--has-image > :not(figure) {
-  @apply md:px-2;
+.idc-card-quote img {
+  @apply w-12 h-12 rounded-full lg:w-14 lg:h-14;
 }
