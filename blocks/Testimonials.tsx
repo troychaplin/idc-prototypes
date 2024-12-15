@@ -8,7 +8,13 @@ import React from "react";
 export const Testimonials = () => {
   return (
     <>
-      <Header title="What our Clients are Saying" size="md" isItalic isCenter>
+      <Header
+        title="What our Clients are Saying"
+        size="md"
+        weight="bold"
+        isItalic
+        isCenter
+      >
         <p>
           Discover why clients trust us for their document needs. Here's what
           they have to say about our expertise, efficiency, and commitment to

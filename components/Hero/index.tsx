@@ -1,17 +1,33 @@
 import { HeroContent } from "./content";
-import { HeroImage } from "./image";
+import { HeroMedia } from "./media";
+import { Section } from "../Section";
+import { uiMaxWidth, uiGridColumns, uiBgTypes } from "../../utils/propClasses";
+
+// Define the types for this component
+type MaxWidthKeys = keyof typeof uiMaxWidth;
+type BgTypeKeys = keyof typeof uiBgTypes;
 
 export interface HeroProps {
   children?: React.ReactNode;
-  addSpace?: boolean;
+  maxWidth?: MaxWidthKeys;
+  cols?: 1 | 2 | "60/40";
+  bgType?: BgTypeKeys;
 }
 
-export const HeroContainer = ({ children, addSpace = false }: HeroProps) => {
-  const space = addSpace ? "md:mt-8 md:mb-12" : "";
-  return <div className={`grid gap-6 md:grid-cols-2 ${space}`}>{children}</div>;
+export const HeroContainer = ({
+  children,
+  maxWidth = "5xl",
+  cols = 1,
+  bgType = "white",
+}: HeroProps) => {
+  return (
+    <Section as="div" maxWidth={maxWidth} bgType={bgType}>
+      <div className={`grid ${uiGridColumns[cols]} gap-6`}>{children}</div>
+    </Section>
+  );
 };
 
 export const Hero = Object.assign(HeroContainer, {
   Content: HeroContent,
-  Image: HeroImage,
+  Media: HeroMedia,
 });

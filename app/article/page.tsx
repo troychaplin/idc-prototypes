@@ -1,9 +1,9 @@
 import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { SiteNav } from "@/blocks/SiteNav";
-import Image from "next/image";
 import { Placeholder } from "@/components/Placeholder";
-import { HeroHomepage } from "@/blocks/HeroHomepage";
+import { Hero } from "@/components/Hero";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,12 +11,24 @@ export default function Home() {
       <SiteNav />
 
       <Main>
-        <Section maxWidth="4xl">
-          <Section as="div" maxWidth="6xl" bgType="gradient">
-            <HeroHomepage />
-          </Section>
+        <Section maxWidth="3xl">
+          <Hero maxWidth="3xl" bgType="gradient">
+            <Hero.Content
+              title="The document apostille process made simple"
+              date="2024-08-31 07:10:12"
+              datePrefix="Published on"
+              headerType="h1"
+              isCenter
+            >
+              <p>
+                We expertly manage all aspects of the document apostille &ndash;
+                authentication & legalization &ndash; attestation &ndash;
+                process for our clients. If you need to present Canadian
+                documents in a foreign jurisdiction we can help!
+              </p>
+            </Hero.Content>
+          </Hero>
 
-          <h1>Header One</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
@@ -83,7 +95,7 @@ export default function Home() {
             felis dapibus eu.
           </p>
 
-          <Section maxWidth="2xl" bgType="blue">
+          <Section bgType="blue">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis. Aenean iaculis, elit non
@@ -125,7 +137,7 @@ export default function Home() {
             felis dapibus eu.
           </p>
 
-          <Section maxWidth="2xl" bgType="blue">
+          <Section bgType="blue">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis. Aenean iaculis, elit non
@@ -264,7 +276,7 @@ export default function Home() {
             felis dapibus eu.
           </p>
 
-          <Section maxWidth="2xl" bgType="blue">
+          <Section bgType="blue">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               consequat urna sed euismod lobortis. Aenean iaculis, elit non
@@ -372,18 +384,6 @@ export default function Home() {
             sollicitudin diam fermentum.
           </p>
 
-          <Section maxWidth="4xl">
-            <h3>Header</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              consequat urna sed euismod lobortis. Aenean iaculis, elit non
-              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
-              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
-              platea dictumst. Phasellus pretium augue est, semper fringilla
-              lacus auctor.
-            </p>
-          </Section>
-
           <p>
             Quisque erat diam, porta quis libero eget, ultrices ornare nisi.
             Vestibulum accumsan mauris sed elit maximus dignissim. Suspendisse
@@ -395,6 +395,10 @@ export default function Home() {
             pulvinar malesuada nunc. Morbi pulvinar nibh nec lectus ullamcorper,
             vel semper augue cursus.
           </p>
+
+          <Section maxWidth="3xl" bgType="blue">
+            <Placeholder name="frequently-asked-questions" />
+          </Section>
 
           <Section maxWidth="5xl" bgType="blue">
             <Placeholder name="frequently-asked-questions" />

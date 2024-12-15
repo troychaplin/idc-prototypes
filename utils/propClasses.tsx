@@ -44,6 +44,14 @@ export const uiFlexCol = {
   lg: "lg:flex-col",
 };
 
+export const uiBgTypes = {
+  none: "",
+  white: "bg-white",
+  blue: "bg-idc-blue-100 py-8 md:py-16",
+  gradient: "bg-gradient-to-t from-idc-blue-100 to-white py-8 md:py-16",
+  edge: "bg-white-blue-edge py-8 md:py-16",
+};
+
 export const uiRoundedCorners = {
   none: "rounded-none",
   sm: "rounded-sm",
@@ -65,8 +73,15 @@ export const uiDropShadow = {
 };
 
 export const headerSizeClasses = {
-  sm: `text-lg md:text-xl lg:text-2xl lg:leading-[2rem] font-bold`,
-  md: `text-xl md:text-2xl lg:text-3xl lg:leading-[2.5rem] font-bold`,
-  lg: `text-2xl md:text-3xl lg:text-4xl lg:leading-[3rem] font-bold`,
-  xl: `text-3xl md:text-4xl lg:text-5xl lg:leading-[3.5rem] font-semibold`,
+  sm: `text-lg md:text-xl lg:text-2xl lg:leading-[2rem]`,
+  md: `text-xl md:text-2xl lg:text-3xl lg:leading-[2.5rem]`,
+  lg: `text-2xl md:text-3xl lg:text-4xl lg:leading-[3rem]`,
+  xl: `text-2xl md:text-3xl lg:text-4xl xl:text-5xl xl:leading-[3.5rem]`,
+};
+
+export const fontWeightClasses = {
+  light: `font-light`,
+  normal: `font-normal`,
+  semibold: `font-semibold`,
+  bold: `font-bold`,
 };
