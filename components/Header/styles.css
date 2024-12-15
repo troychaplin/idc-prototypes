@@ -1,5 +1,5 @@
-.idc-header > * {
-  @apply max-w-3xl;
+.idc-header > p {
+  @apply max-w-4xl mt-0;
 }
 
 .idc-header.idc-header--center > * {

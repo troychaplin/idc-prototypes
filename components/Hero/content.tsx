@@ -4,13 +4,19 @@ import { Header } from "../Header";
 export interface HeroContentProps {
   children: React.ReactNode;
   title: string;
+  date?: string;
+  datePrefix?: string;
   headerType?: "h1" | "h2" | "h3";
+  isCenter?: boolean;
 }
 
 export const HeroContent = ({
   children,
   title,
+  date,
+  datePrefix,
   headerType = "h2",
+  isCenter,
 }: HeroContentProps) => {
   let headerSize: "sm" | "md" | "lg" | "xl";
   switch (headerType) {
@@ -28,8 +34,17 @@ export const HeroContent = ({
       break;
   }
 
+  const centerText = isCenter ? true : false;
+
   return (
-    <Header as={headerType} title={title} size={headerSize}>
+    <Header
+      as={headerType}
+      title={title}
+      date={date}
+      datePrefix={datePrefix}
+      size={headerSize}
+      isCenter={centerText}
+    >
       {children}
     </Header>
   );

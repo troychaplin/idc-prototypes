@@ -6,7 +6,7 @@ import { Button } from "@/components/Button";
 
 export const HeroHomepage = () => {
   return (
-    <Hero maxWidth="7xl" bgType="gradient" cols={2}>
+    <Hero maxWidth="6xl" bgType="gradient" cols={2}>
       <Hero.Content
         title="The document apostille process made simple"
         headerType="h1"

@@ -11,6 +11,7 @@ export const GetStarted = () => {
           title="Global Recognition, Local Expertise: Your Documents, Validated
           Everywhere"
           size="md"
+          weight="bold"
           isItalic
         />
         <p>
