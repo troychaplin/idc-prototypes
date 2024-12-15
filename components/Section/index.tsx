@@ -33,13 +33,14 @@ export const Section = ({
   let bgColor;
   switch (bgType) {
     case "blue":
-      bgColor = "bg-idc-blue-100 py-10";
+      bgColor = "bg-idc-blue-100 py-8 md:py-12";
+
       break;
     case "gradient":
-      bgColor = "bg-gradient-to-t from-idc-blue-100 to-white py-10";
+      bgColor = "bg-gradient-to-t from-idc-blue-100 to-white py-8 md:py-12";
       break;
     case "edge":
-      bgColor = "bg-white-blue-edge py-10";
+      bgColor = "bg-white-blue-edge py-8 md:py-12";
       break;
     default:
       bgColor = "bg-white";
