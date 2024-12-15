@@ -4,6 +4,7 @@ import { SiteNav } from "@/blocks/SiteNav";
 import { Placeholder } from "@/components/Placeholder";
 import { Hero } from "@/components/Hero";
 import Image from "next/image";
+import { AccordionList } from "@/blocks/AccordionList";
 
 export default function Home() {
   return (
@@ -39,6 +40,11 @@ export default function Home() {
             lacus. Quisque et magna nec eros commodo tristique sit amet a leo.
             Donec lacinia libero orci, id ultricies felis dapibus eu.
           </p>
+
+          <Section as="div" maxWidth="3xl" bgType="white">
+            <AccordionList />
+          </Section>
+
           <h2>Header Two</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut

@@ -8,6 +8,7 @@ import { NewsCards } from "@/blocks/NewsCards";
 import { GetStarted } from "@/blocks/GetStarted";
 import { Testimonials } from "@/blocks/Testimonials";
 import { Footer } from "@/components/Footer";
+import { AccordionList } from "@/blocks/AccordionList";
 
 export default function Home() {
   return (
@@ -33,6 +34,10 @@ export default function Home() {
 
           <Section as="div" bgType="blue">
             <Testimonials />
+          </Section>
+
+          <Section as="div" maxWidth="3xl" bgType="white">
+            <AccordionList />
           </Section>
 
           <Section as="div" bgType="white">

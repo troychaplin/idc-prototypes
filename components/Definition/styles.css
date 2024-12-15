@@ -1,0 +1,3 @@
+.idc-definition dd > * + * {
+  @apply mt-4;
+}

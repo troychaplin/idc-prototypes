@@ -4,6 +4,8 @@ import { CardGroup } from "@/components/CardGroup";
 import { CardData } from "@/components/Card/data";
 import { Card } from "@/components/Card";
 import { Header } from "@/components/Header";
+import { ButtonGroup } from "@/components/ButtonGroup";
+import { Button } from "@/components/Button";
 
 export const NewsCards = () => {
   return (
