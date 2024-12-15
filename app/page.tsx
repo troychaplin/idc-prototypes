@@ -1,6 +1,5 @@
 import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
-import { Placeholder } from "@/components/Placeholder";
 import { SiteNav } from "@/blocks/SiteNav";
 import { HeroHomepage } from "@/blocks/HeroHomepage";
 import { LeadIn } from "@/components/LeadIn";
@@ -9,6 +8,7 @@ import { NewsCards } from "@/blocks/NewsCards";
 import { GetStarted } from "@/blocks/GetStarted";
 import { Header } from "@/components/Header";
 import { Testimonials } from "@/blocks/Testimonials";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -38,10 +38,6 @@ export default function Home() {
             <Testimonials />
           </Section>
 
-          <Section as="div" maxWidth="4xl" bgType="white">
-            <Placeholder name="frequently-asked-questions" />
-          </Section>
-
           <Section as="div" bgType="white">
             <Header
               title="Stay Informed, Stay Empowered"
@@ -61,7 +57,7 @@ export default function Home() {
         </Section>
       </Main>
 
-      <footer className="border-b-[80px] idc-footer bg-idc-blue-700 h-[600px] border-idc-blue-900"></footer>
+      <Footer />
     </>
   );
 }
