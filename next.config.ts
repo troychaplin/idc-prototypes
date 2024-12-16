@@ -18,9 +18,13 @@ const nextConfig: NextConfig = {
         hostname: "source.unsplash.com",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "seal-ottawa.bbb.org",
+        pathname: "**",
+      },
     ],
   },
-  /* other config options here */
 };
 
 export default nextConfig;
