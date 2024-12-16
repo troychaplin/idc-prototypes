@@ -1,5 +1,5 @@
 .idc-button {
-  @apply inline-block px-3.5 py-2.5 text-sm font-semibold rounded-md cursor-pointer md:px-5 md:py-3 md:text-base;
+  @apply inline-block px-6 py-4 text-sm font-semibold rounded-md cursor-pointer md:text-base;
 }
 
 .idc-button--outline {
@@ -12,4 +12,48 @@
 
 .idc-button--lg {
   @apply px-7 py-3.5 text-lg;
+}
+
+/* Solid Colors */
+
+.idc-button--light-blue.idc-button--solid {
+  @apply bg-idc-blue-100 text-idc-blue-800 hover:bg-idc-blue-600 hover:text-white;
+}
+
+.idc-button--dark-blue.idc-button--solid {
+  @apply text-white bg-idc-blue-600 hover:bg-idc-orange-700 hover:text-white;
+}
+
+.idc-button--light-orange.idc-button--solid {
+  @apply bg-idc-orange-100 text-idc-orange-800 hover:bg-idc-orange-700 hover:text-white;
+}
+
+.idc-button--dark-orange.idc-button--solid {
+  @apply text-white bg-idc-orange-700 hover:bg-idc-blue-600 hover:text-white;
+}
+
+.idc-button--white.idc-button--solid {
+  @apply bg-white text-idc-black-800 hover:bg-idc-blue-600 hover:text-white;
+}
+
+/* Solid Colors */
+
+.idc-button--light-blue.idc-button--outline {
+  @apply bg-white/40 border-idc-blue-100 text-idc-blue-800 hover:border-idc-blue-600 hover:bg-idc-blue-600 hover:text-white;
+}
+
+.idc-button--dark-blue.idc-button--outline {
+  @apply bg-white/40 text-idc-blue-800 border-idc-blue-600 hover:border-idc-orange-700 hover:bg-idc-orange-700 hover:text-white;
+}
+
+.idc-button--light-orange.idc-button--outline {
+  @apply bg-white/40 border-idc-orange-100 text-idc-orange-800 hover:border-idc-orange-700 hover:bg-idc-orange-700 hover:text-white;
+}
+
+.idc-button--dark-orange.idc-button--outline {
+  @apply bg-white/40 text-idc-orange-800 border-idc-orange-700 hover:border-idc-blue-600 hover:bg-idc-blue-600 hover:text-white;
+}
+
+.idc-button--white.idc-button--outline {
+  @apply text-white border-white bg-white/40 hover:border-idc-blue-600 hover:bg-idc-blue-600 hover:text-white;
 }
