@@ -8,7 +8,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/40/600/400",
     alt: "Cell fire someone loss news.",
-    icon: "pencil-alt",
+    iconName: "phone-volume-solid",
     tags: {
       category: [
         {
@@ -36,7 +36,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/76/600/400",
     alt: "Recent which game fine.",
-    icon: "info-circle",
+    iconName: "file-circle-check-solid",
     tags: {
       category: [
         {
@@ -64,7 +64,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/46/600/400",
     alt: "Boy check single magazine next.",
-    icon: "list-music",
+    iconName: "truck-fast-solid",
     tags: {
       category: [
         {
@@ -92,7 +92,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/100/600/400",
     alt: "Fire cost consumer organization carry government.",
-    icon: "book",
+    iconName: "book",
     tags: {
       category: [
         {
@@ -119,7 +119,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/70/600/400",
     alt: "Yeah wind necessary bit dog factor student also.",
-    icon: "list-music",
+    iconName: "list-music",
     tags: {
       category: [
         {
@@ -147,7 +147,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/98/600/400",
     alt: "Decide win laugh now federal.",
-    icon: "book",
+    iconName: "book",
     tags: {
       category: [
         {
@@ -174,7 +174,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/96/600/400",
     alt: "Ten heavy lawyer position.",
-    icon: "book",
+    iconName: "book",
     tags: {
       category: [
         {
@@ -202,7 +202,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/1/600/400",
     alt: "Have you buy body too.",
-    icon: "pencil-alt",
+    iconName: "pencil-alt",
     tags: {
       category: [
         {
@@ -229,7 +229,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/17/600/400",
     alt: "Seat team loss notice.",
-    icon: "pencil-alt",
+    iconName: "pencil-alt",
     tags: {
       category: [
         {
@@ -256,7 +256,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/46/600/400",
     alt: "Write carry movie laugh.",
-    icon: "info-circle",
+    iconName: "info-circle",
     tags: {
       category: [
         {
@@ -283,7 +283,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/92/600/400",
     alt: "Series nation provide thank difference.",
-    icon: "info-circle",
+    iconName: "info-circle",
     tags: {
       category: [
         {
@@ -310,7 +310,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/94/600/400",
     alt: "Which you certain executive recognize.",
-    icon: "list-music",
+    iconName: "list-music",
     tags: {
       category: [
         {
@@ -337,7 +337,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/70/600/400",
     alt: "Once several concern imagine movement.",
-    icon: "book",
+    iconName: "book",
     tags: {
       category: [
         {
@@ -364,7 +364,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/19/600/400",
     alt: "Tv every simply take usually.",
-    icon: "list-music",
+    iconName: "list-music",
     tags: {
       category: [
         {
@@ -391,7 +391,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/81/600/400",
     alt: "All since deep ten.",
-    icon: "list-music",
+    iconName: "list-music",
     tags: {
       category: [
         {
@@ -418,7 +418,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/12/600/400",
     alt: "Reflect tell dog suffer young for animal.",
-    icon: "info-circle",
+    iconName: "info-circle",
     tags: {
       category: [
         {
@@ -445,7 +445,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/65/600/400",
     alt: "Side real onto owner sure.",
-    icon: "book",
+    iconName: "book",
     tags: {
       category: [
         {
@@ -472,7 +472,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/28/600/400",
     alt: "Among wait team a.",
-    icon: "info-circle",
+    iconName: "info-circle",
     tags: {
       category: [
         {
@@ -499,7 +499,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/92/600/400",
     alt: "Production figure reason.",
-    icon: "list-music",
+    iconName: "list-music",
     tags: {
       category: [
         {
@@ -526,7 +526,7 @@ export const CardData = [
     link: "#",
     image: "https://picsum.photos/id/7/600/400",
     alt: "East low similar.",
-    icon: "book",
+    iconName: "book",
     tags: {
       category: [
         {
