@@ -54,7 +54,9 @@ export const NewsCards = () => {
           label="View More News"
           color="light-orange"
           isOutline
-          onClick={handleViewMoreClick}
+          onClick={() => {
+            window.location.href = "https://www.idocscanada.ca";
+          }}
         />
       </ButtonGroup>
     </>
