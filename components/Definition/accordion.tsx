@@ -15,7 +15,7 @@ export const DefinitionAccordion = ({
       : "";
 
   return (
-    <div className="grid px-2 py-3 border-b idc-accordion border-idc-black-100 md:py-4 first:border-t">
+    <div className="grid px-2 py-4 border-b idc-accordion border-idc-black-100 first:border-t">
       <dt className="mt-0 mb-0 font-semibold md:mt-0">
         <div
           className="flex items-center w-full idc-accordion-button"
