@@ -1,5 +1,5 @@
 .idc-button {
-  @apply inline-block whitespace-nowrap px-4 py-3 text-sm font-semibold rounded-md cursor-pointer md:text-base;
+  @apply inline-block px-4 py-3 text-sm font-semibold rounded-md cursor-pointer whitespace-nowrap md:text-base;
 }
 
 .idc-button--outline {
@@ -13,7 +13,7 @@
 }
 
 .idc-button--xs {
-  @apply px-3 py-2 md:px-3 md:py-2;
+  @apply px-3 py-2 md:px-3 md:py-2 md:text-sm;
 }
 
 .idc-button--lg {

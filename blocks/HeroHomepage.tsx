@@ -18,8 +18,14 @@ export const HeroHomepage = () => {
           jurisdiction we can help!
         </p>
         <ButtonGroup>
-          <Button label="Primary Button" color="dark-orange" />
-          <Button label="Secondary Button" isOutline />
+          <Button
+            label="Get Started Now"
+            color="dark-blue"
+            // isOutline
+            onClick={() => {
+              window.location.href = "https://www.idocscanada.ca";
+            }}
+          />
         </ButtonGroup>
       </Hero.Content>
       <Hero.Media>
