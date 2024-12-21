@@ -19,7 +19,7 @@ export const IconCards = () => {
           <Card.Footer>
             <a
               href={link}
-              className="text-black idc-button idc-button--sm idc-button--outline border-idc-orange-300 bg-idc-orange-50 hover:border-idc-blue-300 hover:bg-idc-blue-50"
+              className="idc-button idc-button--light-orange idc-button--sm idc-button--outline"
             >
               Learn more
             </a>

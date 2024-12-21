@@ -4,6 +4,7 @@ export interface ButtonProps {
   type?: "button" | "submit" | "reset";
   size?: "sm" | "md" | "lg";
   isOutline?: boolean;
+  noBg?: boolean;
   onClick?: () => void;
 }
 
@@ -13,14 +14,16 @@ export const Button = ({
   type = "button",
   size = "md",
   isOutline = false,
+  noBg = false,
   ...props
 }: ButtonProps) => {
   const buttonStyles = isOutline ? `idc-button--outline` : `idc-button--solid`;
+  const noBgColor = noBg && isOutline ? `idc-button--no-bg` : "";
 
   return (
     <button
       type={type}
-      className={`idc-button idc-button--${color} ${buttonStyles} idc-button--${size}`}
+      className={`idc-button idc-button--${color} ${buttonStyles} idc-button--${size} ${noBgColor}`}
       {...props}
     >
       {label}

@@ -40,6 +40,14 @@ export default function Home() {
             <Button label="White" color="white" isOutline />
           </ButtonGroup>
 
+          <ButtonGroup>
+            <Button label="Light Blue" color="light-blue" isOutline noBg />
+            <Button label="Dark Blue" color="dark-blue" isOutline noBg />
+            <Button label="Light Orange" color="light-orange" isOutline noBg />
+            <Button label="Dark Orange" color="dark-orange" isOutline noBg />
+            <Button label="White" color="white" isOutline noBg />
+          </ButtonGroup>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
             consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
@@ -74,6 +82,38 @@ export default function Home() {
               isOutline
             />
             <Button label="White" color="white" size="sm" isOutline />
+          </ButtonGroup>
+
+          <ButtonGroup>
+            <Button
+              label="Light Blue"
+              color="light-blue"
+              size="sm"
+              isOutline
+              noBg
+            />
+            <Button
+              label="Dark Blue"
+              color="dark-blue"
+              size="sm"
+              isOutline
+              noBg
+            />
+            <Button
+              label="Light Orange"
+              color="light-orange"
+              size="sm"
+              isOutline
+              noBg
+            />
+            <Button
+              label="Dark Orange"
+              color="dark-orange"
+              size="sm"
+              isOutline
+              noBg
+            />
+            <Button label="White" color="white" size="sm" isOutline noBg />
           </ButtonGroup>
 
           <p>
