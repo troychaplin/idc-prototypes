@@ -28,7 +28,7 @@ export const NewsCards = () => {
       <CardGroup cols={3}>
         {CardData.slice(0, 3).map(
           ({ id, link, title, excerpt, image, alt, date }) => (
-            <Card key={id}>
+            <Card key={id} addFlex>
               <Card.Figure>
                 <img
                   className="rounded-md"
@@ -39,7 +39,7 @@ export const NewsCards = () => {
                 />
               </Card.Figure>
               <Card.Header title={title} date={date} />
-              <Card.Content text={excerpt} link={link} isExcerpt />
+              <Card.Content text={excerpt} link={link} isExcerpt hideMobile />
             </Card>
           )
         )}
