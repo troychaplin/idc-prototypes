@@ -8,6 +8,10 @@ import { ButtonGroup } from "@/components/ButtonGroup";
 import { Button } from "@/components/Button";
 
 export const NewsCards = () => {
+  const handleViewMoreClick = () => {
+    window.location.href = "https://www.idocscanada.ca";
+  };
+
   return (
     <>
       <Header
@@ -44,6 +48,15 @@ export const NewsCards = () => {
           )
         )}
       </CardGroup>
+
+      <ButtonGroup isCenter>
+        <Button
+          label="View More News"
+          color="light-orange"
+          isOutline
+          onClick={handleViewMoreClick}
+        />
+      </ButtonGroup>
     </>
   );
 };

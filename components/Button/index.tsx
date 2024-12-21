@@ -15,6 +15,7 @@ export const Button = ({
   size = "md",
   isOutline = false,
   noBg = false,
+  onClick,
   ...props
 }: ButtonProps) => {
   const buttonStyles = isOutline ? `idc-button--outline` : `idc-button--solid`;
@@ -24,6 +25,7 @@ export const Button = ({
     <button
       type={type}
       className={`idc-button idc-button--${color} ${buttonStyles} idc-button--${size} ${noBgColor}`}
+      onClick={onClick}
       {...props}
     >
       {label}
