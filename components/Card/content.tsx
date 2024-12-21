@@ -4,11 +4,21 @@ export interface CardContentProps {
   text?: string;
   link?: string;
   isExcerpt?: boolean;
+  hideMobile?: boolean;
 }
 
-export const CardContent = ({ text, link, isExcerpt }: CardContentProps) => {
+export const CardContent = ({
+  text,
+  link,
+  isExcerpt = false,
+  hideMobile = false,
+}: CardContentProps) => {
+  const hideMobileClass = hideMobile ? "hidden md:block" : "";
+
   return (
-    <p className="mt-2 text-base font-normal leading-7 md:mt-3">
+    <p
+      className={`${hideMobileClass} mt-2 text-base font-normal leading-7 md:mt-3`}
+    >
       {isExcerpt && text && text.length > 170 ? (
         <>
           {text.substring(0, 170)}...

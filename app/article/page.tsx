@@ -1,7 +1,6 @@
 import { Main } from "@/components/Main";
 import { Section } from "@/components/Section";
 import { SiteNav } from "@/blocks/SiteNav";
-import { Placeholder } from "@/components/Placeholder";
 import { Hero } from "@/components/Hero";
 import Image from "next/image";
 import { AccordionList } from "@/blocks/AccordionList";
@@ -40,10 +39,6 @@ export default function Home() {
             lacus. Quisque et magna nec eros commodo tristique sit amet a leo.
             Donec lacinia libero orci, id ultricies felis dapibus eu.
           </p>
-
-          <Section as="div" maxWidth="3xl" bgType="white">
-            <AccordionList />
-          </Section>
 
           <h2>Header Two</h2>
           <p>
@@ -101,17 +96,8 @@ export default function Home() {
             felis dapibus eu.
           </p>
 
-          <Section bgType="blue">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              consequat urna sed euismod lobortis. Aenean iaculis, elit non
-              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
-              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
-              platea dictumst. Phasellus pretium augue est, semper fringilla
-              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
-              commodo tristique sit amet a leo. Donec lacinia libero orci, id
-              ultricies felis dapibus eu.
-            </p>
+          <Section as="div" maxWidth="3xl" bgType="white">
+            <AccordionList />
           </Section>
 
           <p>
@@ -142,19 +128,6 @@ export default function Home() {
             tristique sit amet a leo. Donec lacinia libero orci, id ultricies
             felis dapibus eu.
           </p>
-
-          <Section bgType="blue">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              consequat urna sed euismod lobortis. Aenean iaculis, elit non
-              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
-              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
-              platea dictumst. Phasellus pretium augue est, semper fringilla
-              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
-              commodo tristique sit amet a leo. Donec lacinia libero orci, id
-              ultricies felis dapibus eu.
-            </p>
-          </Section>
 
           <ul>
             <li>
@@ -282,90 +255,6 @@ export default function Home() {
             felis dapibus eu.
           </p>
 
-          <Section bgType="blue">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              consequat urna sed euismod lobortis. Aenean iaculis, elit non
-              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
-              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
-              platea dictumst. Phasellus pretium augue est, semper fringilla
-              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
-              commodo tristique sit amet a leo. Donec lacinia libero orci, id
-              ultricies felis dapibus eu.
-            </p>
-          </Section>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
-          </p>
-
           <figure className="ui-figure alignleft size-medium">
             <Image
               className=""
@@ -389,30 +278,6 @@ export default function Home() {
             vel semper augue cursus. Duis dapibus nisl eget purus dignissim, vel
             sollicitudin diam fermentum.
           </p>
-
-          <p>
-            Quisque erat diam, porta quis libero eget, ultrices ornare nisi.
-            Vestibulum accumsan mauris sed elit maximus dignissim. Suspendisse
-            ac facilisis felis. Mauris rhoncus mauris mauris, a porttitor diam
-            pellentesque ut. Sed commodo posuere interdum. Cras aliquet mauris
-            sit amet lacus eleifend, ac maximus sem porta. Curabitur consectetur
-            tortor sapien, in maximus orci elementum ut. Duis et massa mattis
-            enim sagittis pellentesque. Sed turpis ex, sollicitudin sed est et,
-            pulvinar malesuada nunc. Morbi pulvinar nibh nec lectus ullamcorper,
-            vel semper augue cursus.
-          </p>
-
-          <Section maxWidth="3xl" bgType="blue">
-            <Placeholder name="frequently-asked-questions" />
-          </Section>
-
-          <Section maxWidth="5xl" bgType="blue">
-            <Placeholder name="frequently-asked-questions" />
-          </Section>
-
-          <Section maxWidth="7xl" bgType="blue">
-            <Placeholder name="news-and-articles" />
-          </Section>
 
           <p>
             Nullam ut maximus lorem. Maecenas pulvinar odio eu sem molestie
@@ -455,77 +320,6 @@ export default function Home() {
             dapibus lectus, a cursus dui tellus sagittis turpis. Maecenas nec
             metus luctus, tincidunt mauris in, tristique urna. Fusce commodo
             malesuada interdum.
-          </p>
-
-          <h2>Not Wrapped</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Phasellus pretium augue est, semper fringilla lacus auctor
-            in. Fusce eu lectus lacus. Quisque et magna nec eros commodo
-            tristique sit amet a leo. Donec lacinia libero orci, id ultricies
-            felis dapibus eu.
-          </p>
-
-          <Section as="div">
-            <h2>Inside Simple Section Wrapper</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              consequat urna sed euismod lobortis. Aenean iaculis, elit non
-              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
-              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
-              platea dictumst. Phasellus pretium augue est, semper fringilla
-              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
-              commodo tristique sit amet a leo. Donec lacinia libero orci, id
-              ultricies felis dapibus eu.
-            </p>
-          </Section>
-
-          <Section as="div">
-            <h2>Inside Constrained Section Wrapper</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              consequat urna sed euismod lobortis. Aenean iaculis, elit non
-              ornare maximus, ligula mauris ultricies felis, sed vestibulum arcu
-              ipsum vitae elit. Nullam sit amet interdum massa. In hac habitasse
-              platea dictumst. Phasellus pretium augue est, semper fringilla
-              lacus auctor in. Fusce eu lectus lacus. Quisque et magna nec eros
-              commodo tristique sit amet a leo. Donec lacinia libero orci, id
-              ultricies felis dapibus eu.
-            </p>
-          </Section>
-
-          <figure className="ui-figure alignleft size-medium">
-            <Image
-              className=""
-              src="https://picsum.photos/id/20/300/225"
-              alt="Images require alt text"
-              width={300}
-              height={225}
-              decoding="async"
-            />
-          </figure>
-
-          <p>
-            Quisque erat diam, porta quis libero eget, ultrices ornare nisi.
-            Vestibulum accumsan mauris sed elit maximus dignissim. Suspendisse
-            ac facilisis felis. Mauris rhoncus mauris mauris, a porttitor diam
-            pellentesque ut. Sed commodo posuere interdum. Cras aliquet mauris
-            sit amet lacus eleifend, ac maximus sem porta. Curabitur consectetur
-            tortor sapien, in maximus orci elementum.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat urna sed euismod lobortis. Aenean iaculis, elit non ornare
-            maximus, ligula mauris ultricies felis, sed vestibulum arcu ipsum
-            vitae elit. Nullam sit amet interdum massa. In hac habitasse platea
-            dictumst. Duis et massa mattis enim sagittis pellentesque. Sed
-            turpis ex, sollicitudin sed est et, pulvinar malesuada nunc. Morbi
-            pulvinar nibh nec lectus ullamcorper, vel semper augue cursus. Duis
-            dapibus nisl eget purus dignissim, vel sollicitudin diam fermentum.
           </p>
         </Section>
       </Main>

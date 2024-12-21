@@ -8,6 +8,10 @@ import { ButtonGroup } from "@/components/ButtonGroup";
 import { Button } from "@/components/Button";
 
 export const NewsCards = () => {
+  const handleViewMoreClick = () => {
+    window.location.href = "https://www.idocscanada.ca";
+  };
+
   return (
     <>
       <Header
@@ -28,7 +32,7 @@ export const NewsCards = () => {
       <CardGroup cols={3}>
         {CardData.slice(0, 3).map(
           ({ id, link, title, excerpt, image, alt, date }) => (
-            <Card key={id}>
+            <Card key={id} addFlex>
               <Card.Figure>
                 <img
                   className="rounded-md"
@@ -39,11 +43,20 @@ export const NewsCards = () => {
                 />
               </Card.Figure>
               <Card.Header title={title} date={date} />
-              <Card.Content text={excerpt} link={link} isExcerpt />
+              <Card.Content text={excerpt} link={link} isExcerpt hideMobile />
             </Card>
           )
         )}
       </CardGroup>
+
+      <ButtonGroup isCenter>
+        <Button
+          label="View More News"
+          color="light-orange"
+          isOutline
+          onClick={handleViewMoreClick}
+        />
+      </ButtonGroup>
     </>
   );
 };

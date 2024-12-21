@@ -11,13 +11,19 @@ type MaxWidthKeys = keyof typeof uiMaxWidth;
 export interface CardProps {
   children?: React.ReactNode;
   maxWidth?: MaxWidthKeys;
+  addFlex?: boolean;
 }
 
-export const CardContainer = ({ children, maxWidth }: CardProps) => {
+export const CardContainer = ({
+  children,
+  maxWidth,
+  addFlex = false,
+}: CardProps) => {
   const cardWidth = maxWidth ? uiMaxWidth[maxWidth] : "";
+  const flexClass = addFlex ? "flex gap-4 md:block" : "";
 
   return (
-    <div className={`not-prose idc-card rounded-md ${cardWidth}`}>
+    <div className={`not-prose idc-card rounded-md ${cardWidth} ${flexClass}`}>
       {children}
     </div>
   );
