@@ -97,7 +97,7 @@ export const Footer = () => {
                   height="42"
                   alt="Click for the BBB Business Review of this Legal Information Services in Ottawa ON"
                   style={{ border: 0 }}
-                  src="/assets/bbb-logo.png"
+                  src="/assets/logos/bbb-logo.png"
                 />
               </a>
               <p className="md:max-w-64">

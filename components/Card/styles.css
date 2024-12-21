@@ -1,9 +1,9 @@
-.idc-card img {
+.idc-card-figure-img img {
   @apply w-40 md:w-full;
 }
 
-.idc-card svg {
-  @apply w-8 h-8 md:w-10 md:h-10 fill-idc-blue-400;
+.idc-card-figure-svg svg {
+  @apply w-8 h-8 md:w-10 md:h-10 fill-idc-blue-500;
 }
 
 .idc-card-quote img {

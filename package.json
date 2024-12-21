@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run icon-list && next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
+    "icon-list": "node ./helpers/createIconArray.mjs",
     "clean": "rm -rf node_modules && rm -rf .next && npm install && npm run build"
   },
   "dependencies": {
